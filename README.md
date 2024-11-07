@@ -1,7 +1,7 @@
 # srd_web
 
 ## ¿Para qué es esta propuesta? 
-Exponer y dar a conocer mis trabajos realizados durante mis años de formación como diseñadora
+Exponer y dar a conocer mis trabajos realizados durante mis años de formación como diseñador, pero por medio de un storytelling para expresar el sentido de los proyectos 
 
 ## ¿Para quiénes es esta propuesta?
 
