@@ -38,7 +38,7 @@ Busca referencias visuales y una navegación que le permita explorar libremente 
 
 **Expectativas:** Quiere encontrar imágenes impactantes y atractivas, más centradas en el arte que en la funcionalidad del diseño. Manuel espera que el sitio esté orientado hacia lo visual y que ofrezca una experiencia inmersiva, casi como una galería de arte.
 
-**Frustaciones:** Quiere un espacio donde encontrar inspiración desde otra disciplina para poder aportar en sus proyectos.
+**Frustaciones:** No encuentra un espacio donde encontrar inspiración desde otra disciplina para poder aportar en sus proyectos.
 
 ## ¿Qué existe que es similar a la propuesta? 
 
