@@ -5,7 +5,8 @@ Exponer y dar a conocer mis trabajos realizados durante mis años de formación 
 
 ## ¿Para quiénes es esta propuesta?
 
-### 1. Usuario Más Probable: Estudiante Aspirante a Diseñadora Industrial
+### 1. Usuario Más Probable: 
+Estudiante Aspirante a Diseñadora Industrial
 
 **Demografía (Quién es)**
 Edad: 22 años
@@ -29,7 +30,7 @@ Busca orientación para mejorar su portafolio y destacarse en el mercado laboral
 
    
 ### 2.  Usuario Menos Probable
-Nombre: Manuel, 25 años, músico independiente y artista visual
+Músico independiente y artista visual
 
 **Comportamientos:**
 Manuel no trabaja en diseño industrial ni en sectores relacionados, pero podría estar explorando el portafolio para ideas  de colaboración artística. Su interés en diseño industrial es tangencial, pues proviene de la estética visual y la forma en que los      objetos se integran en el arte y la cultura.
