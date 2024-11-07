@@ -42,12 +42,28 @@ Busca referencias visuales y una navegación que le permita explorar libremente 
 
 **Frustaciones:** Quiere un espacio donde encontrar inspiración desde otra disciplina para poder aportar en sus proyectos.
 
-## ¿Qué existe que es similar a la propuesta? → antecedentes** →
+## ¿Qué existe que es similar a la propuesta? 
 
-1. https://gmt-office.eu/
-2. https://wicktelgenkamp.com/
-3. https://jmlcjmlc.com/
-4. 
+*GÉOMÉTRAL (https://gmt-office.eu/)*
+
+1. Positivo: Diseño minimalista que permite a los proyectos destacar sin distracciones, resaltando las imágenes y el contenido visual de manera efectiva.
+2.Negativo: La navegación puede resultar poco intuitiva para algunos usuarios, ya que la simplicidad extrema del diseño limita las guías visuales y puede hacer que la información sea difícil de encontrar.
+
+*Wick Telgenkamp (https://wicktelgenkamp.com/)*
+
+1. Positivo: Interfaz moderna y accesible que facilita la exploración de los proyectos, proporcionando una experiencia de usuario fluida.
+2. Negativo: La información de los proyectos es limitada, lo que podría hacer que usuarios interesados en detalles técnicos o metodológicos se sientan frustrados.
+
+*JMLC (https://jmlcjmlc.com/)*
+
+1. Positivo: La galería de imágenes muestra una diversidad de proyectos y colaboraciones, permitiendo una buena comprensión de la variedad de trabajos del diseñador.
+2. Negativo: La estructura visual de la página es algo densa, lo que puede hacer que el contenido se sienta abarrotado y poco fácil de navegar.
+
+*Anastasia Eggers (https://anastasiaeggers.com/)*
+
+1. Positivo: Diseño visualmente atractivo que refleja la creatividad del portafolio, logrando una experiencia inmersiva y artística.
+2. Negativo: La estética artística puede hacer que ciertos aspectos de la navegación sean confusos, especialmente para usuarios que buscan información técnica o estructura más organizada.
 
 
-## ¿Qué existe que puede inspirar la propuesta? → referentes** → prepare un moodboard con elementos visuales, distintos de sitios y aplicaciones web, que puedan aportar novedad a su diseño. Para este moodboard puede usar: https://create.vista.com/es/templates/mood-board/, https://www.canva.com/es_mx/crear/mood-boards/, https://www.adobe.com/es/express/create/mood-board  
+## ¿Qué existe que puede inspirar la propuesta? →
+![MOODBOARD_srdweb](https://github.com/user-attachments/assets/281c9538-f1f6-4d7d-9873-60daa6508ae0)
