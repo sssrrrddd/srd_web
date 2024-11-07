@@ -1,8 +1,9 @@
 # srd_web
 
-## ¿Para qué es esta propuesta? → objetivo general** → Exponer y dar a conocer mis trabajos realizados durante mis años de formación como diseñadora
+## ¿Para qué es esta propuesta? 
+Exponer y dar a conocer mis trabajos realizados durante mis años de formación como diseñadora
 
-## ¿Para quiénes es esta propuesta? → usuarios extremos y usuarios promedio** →
+## ¿Para quiénes es esta propuesta?
 
 ### Usuario Más Probable: Estudiante Aspirante a Diseñadora Industrial
 
