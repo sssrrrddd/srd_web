@@ -1,17 +1,15 @@
 # srd_web
 
 ## ¿Para qué es esta propuesta? 
-Exponer y dar a conocer mis trabajos realizados durante mis años de formación como diseñador, pero por medio de un storytelling para expresar el sentido de los proyectos 
+Exponer y dar a conocer mis trabajos realizados durante mis años de formación como diseñadora, pero por medio de un storytelling para expresar el sentido de los proyectos. 
 
 ## ¿Para quiénes es esta propuesta?
 
 ### 1. Usuario Más Probable: 
 Estudiante Aspirante a Diseñadora Industrial
 
-**Demografía (Quién es)**
-Edad: 22 años
-Género: Femenino
-Ocupación: Estudiante universitaria de diseño industrial
+**Expectativas:** 
+Explorar y poder encontrar proyectos de diseño que lo ayuden a comprender que areas del diseño le interesan más, y así inspirarse en sus años como estudiante de diseño.
   
 **Comportamientos:**
 Visita regularmente portafolios y sitios web de diseño para inspiración.
@@ -46,23 +44,23 @@ Busca referencias visuales y una navegación que le permita explorar libremente 
 
 *GÉOMÉTRAL (https://gmt-office.eu/)*
 
-1. Positivo: Diseño minimalista que permite a los proyectos destacar sin distracciones, resaltando las imágenes y el contenido visual de manera efectiva.
-2.Negativo: La navegación puede resultar poco intuitiva para algunos usuarios, ya que la simplicidad extrema del diseño limita las guías visuales y puede hacer que la información sea difícil de encontrar.
+1. Positivo: Diseño minimalista que permite a los proyectos destacar sin distracciones y mezcla contenido análogo con digital.
+2.Negativo: Al ser muy simple y no tener tanta interactividad quizas el usuario pierde interés en el storytelling de la pagina.
 
 *Wick Telgenkamp (https://wicktelgenkamp.com/)*
 
-1. Positivo: Interfaz moderna y accesible que facilita la exploración de los proyectos, proporcionando una experiencia de usuario fluida.
-2. Negativo: La información de los proyectos es limitada, lo que podría hacer que usuarios interesados en detalles técnicos o metodológicos se sientan frustrados.
+1. Positivo: Es simple y atractivo a simple vista, tiene buena selección de imagenes de proyectos, todas son atractivas y los margenes funcionan bien para darle ligereza a la lectura de la pagina.
+2. Negativo: No proporciona mucha información de lo que trata cada proyecto, solo en general del diseñador
 
 *JMLC (https://jmlcjmlc.com/)*
 
-1. Positivo: La galería de imágenes muestra una diversidad de proyectos y colaboraciones, permitiendo una buena comprensión de la variedad de trabajos del diseñador.
-2. Negativo: La estructura visual de la página es algo densa, lo que puede hacer que el contenido se sienta abarrotado y poco fácil de navegar.
+1. Positivo: La galería de imágenes en cada proyecto permite seguir el storytelling de cada uno de manera simple sin necesidad de leer, solo a través de la imagen. Sirve que cada proyecto esté acompañado de visualizaciones 3d, dibujos y fotografías
+2. Negativo: La estructura visual de la página es algo densa, y quizás un texto pequeño aportaría dinamismo y mayor interacción de quien visita la pagina.
 
 *Anastasia Eggers (https://anastasiaeggers.com/)*
 
-1. Positivo: Diseño visualmente atractivo que refleja la creatividad del portafolio, logrando una experiencia inmersiva y artística.
-2. Negativo: La estética artística puede hacer que ciertos aspectos de la navegación sean confusos, especialmente para usuarios que buscan información técnica o estructura más organizada.
+1. Positivo: Utilización de fotografías para presentar proyectos de diseño despierta interés en saber la temática social de los proyectos. Además la información en texto proporcionada en cada proyecto es corta y suficiente para comprenderlos. Bueno tambien poner videos.
+2. Negativo: Quizás se podría utilizar formas más llamativas de mostrar las imagenes de los proyectos al clickearlos, ya que en la pantalla de inicio son mas llamativos.
 
 
 ## ¿Qué existe que puede inspirar la propuesta? →
