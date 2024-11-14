@@ -81,5 +81,5 @@ Revisa portafolios de diseñadores o plataformas que ofrezcan proyectos listos p
 2. Negativo: Quizás se podría utilizar formas más llamativas de mostrar las imagenes de los proyectos al clickearlos, ya que en la pantalla de inicio son mas llamativos.
 
 
-## ¿Qué existe que puede inspirar la propuesta? →
+## Inspiración de la propuesta →
 ![MOODBOARD_srdweb](https://github.com/user-attachments/assets/281c9538-f1f6-4d7d-9873-60daa6508ae0)
