@@ -1,12 +1,12 @@
 # srd_web
 
 ## ¿Para qué es esta propuesta? 
-Exponer y dar a conocer mis trabajos realizados durante mis años de formación como diseñadora, pero por medio de un storytelling para expresar el sentido de los proyectos. 
+Exponer y dar a conocer mis trabajos realizados durante mis años de formación como diseñadora, exponiéndolos de manera atractiva, consisa y que refelejen el sentido de cada proyecto.
 
 ## ¿Para quiénes es esta propuesta?
 
-### 1. Usuario Más Probable: 
-Estudiante Aspirante a Diseñadora Industrial
+### 1. Usuario Probable: 
+1. Estudiante Aspirante a Diseñadora Industrial
 
 **Expectativas:** 
 Explorar y poder encontrar proyectos de diseño que lo ayuden a comprender que areas del diseño le interesan más, y así inspirarse en sus años como estudiante de diseño.
@@ -27,8 +27,23 @@ Dificultad para diferenciar entre trabajos de calidad y promedio.
 Busca orientación para mejorar su portafolio y destacarse en el mercado laboral.
 
    
-### 2.  Usuario Menos Probable
-Músico independiente y artista visual
+### 2.  Usuarios Extremos
+2.1 Empresa o agencia en busqueda de contratar a diseñador
+
+**Objetivos:**
+Encontrar candidatos adecuados para una posición de diseñador industrial que puedan aportar soluciones creativas e innovadoras a proyectos de diseño de productos o empaque.
+    
+**Frustraciones:**
+Tiene dificultades para entender las diferencias entre los distintos perfiles de diseñadores industriales, especialmente si no está familiarizado con el vocabulario técnico del campo.
+  
+**Motivaciones:**
+Quiere contratar a un diseñador industrial que pueda adaptarse rápidamente a las necesidades de la empresa, sea eficiente y aporte ideas frescas que encajen en la visión de productos o servicios.
+
+**Comportamientos**
+Prefiere portafolios visuales bien organizados y fáciles de entender, que muestren el proceso de diseño sin necesidad de entrar en detalles técnicos complicados.
+    
+
+2.2 Adulto mayor (
 
 **Comportamientos:**
 Manuel no trabaja en diseño industrial ni en sectores relacionados, pero podría estar explorando el portafolio para ideas  de colaboración artística. Su interés en diseño industrial es tangencial, pues proviene de la estética visual y la forma en que los      objetos se integran en el arte y la cultura.
@@ -39,6 +54,7 @@ Busca referencias visuales y una navegación que le permita explorar libremente 
 **Expectativas:** Quiere encontrar imágenes impactantes y atractivas, más centradas en el arte que en la funcionalidad del diseño. Manuel espera que el sitio esté orientado hacia lo visual y que ofrezca una experiencia inmersiva, casi como una galería de arte.
 
 **Frustaciones:** No encuentra un espacio donde encontrar inspiración desde otra disciplina para poder aportar en sus proyectos.
+
 
 ## ¿Qué existe que es similar a la propuesta? 
 
