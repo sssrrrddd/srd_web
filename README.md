@@ -5,7 +5,7 @@ Exponer y dar a conocer mis trabajos realizados durante mis años de formación 
 
 ## ¿Para quiénes es esta propuesta?
 
-### 1. Usuario Probable: 
+### Usuario Probable: 
 1. Estudiante Aspirante a Diseñadora Industrial
 
 **Objetivos:** 
@@ -27,7 +27,7 @@ Activa en redes sociales profesionales como Behance y LinkedIn.
 Asiste a conferencias, talleres y exposiciones relacionadas con el diseño.
 
    
-### 2.  Usuarios Extremos
+###  Usuarios Extremos
 2.1 Reclutador de una agencia en busqueda de contratar a diseñador
 
 **Objetivos:**
