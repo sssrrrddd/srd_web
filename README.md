@@ -1,7 +1,7 @@
 # srd_web
 
 ## ¿Para qué es esta propuesta? 
-Exponer y dar a conocer mis trabajos realizados durante mis años de formación como diseñadora, exponiéndolos de manera atractiva, consisa y que refelejen el sentido de cada proyecto.
+Exponer y dar a conocer mis trabajos realizados durante mis años de formación como diseñadora, exponiéndolos de manera atractiva, consisa y que reflejen el sentido de cada proyecto.
 
 ## ¿Para quiénes es esta propuesta?
 
