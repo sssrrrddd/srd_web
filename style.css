@@ -1,0 +1,72 @@
+/* Estilo para el nombre con la fuente "Piazzolla" en cursiva */
+body {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.brand-name {
+  font-family: 'Piazzolla', serif;
+  font-style: italic;
+}
+
+.nav {
+  font-weight: bold;
+  color: grey; /* Forzar el color negro */
+  text-decoration: none; /* Quitar subrayado */
+}
+
+/* Cambiar el color de los enlaces a negro por defecto */
+.nav-link {
+  font-weight: bold;
+  color: black !important; /* Forzar el color negro */
+  text-decoration: none; /* Quitar subrayado */
+}
+
+/* Cambiar el color al pasar el mouse (hover) a gris */
+.nav-link:hover {
+  color: gray !important;
+}
+
+/* Color gris para el enlace activo */
+.nav-link.active {
+  color: gray !important;
+}
+
+/* Evitar que los enlaces cambien de color al hacer clic o al enfocarse */
+a:focus, a:active {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.spectral-italic {
+  font-family: 'Spectral', serif;
+  font-style: italic;
+}
+
+.card-title {
+  margin-bottom: 1px;
+}
+
+/* Ajustar el tamaño de las cartas */
+.card-img-top {
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
+}
+
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+header {
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInDown;
+}
