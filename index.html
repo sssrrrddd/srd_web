@@ -33,21 +33,177 @@
 
 <!-- Meta Tags Generated with https://metatags.io -->
 
-<style type="text/css">
-    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-body{
-    font-family: "Roboto Mono", monospace;
-    text-align: center;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-} 
-   
+<style>
+    /* Estilo para el nombre con la fuente "Spectral" en cursiva */
+      body {
+            opacity: 0;
+            transition: opacity 1s;
+        }
+    .brand-name {
+      font-family: 'Spectral', serif;
+      font-style: italic;
+      
+    }
 
+    .nav {
+      font-weight: bold;
+      color: grey;  /* Forzar el color negro */
+      text-decoration: none;    /* Quitar subrayado */
+    }
+    /* Cambiar el color de los enlaces a negro por defecto */
+    .nav-link {
+      font-weight: bold;
+      color: black !important;  /* Forzar el color negro */
+      text-decoration: none;    /* Quitar subrayado */
+    }
+
+    /* Cambiar el color al pasar el mouse (hover) a gris */
+    .nav-link:hover {
+      color: gray !important;  /* Forzar el color gris en hover */
+    }
+
+    /* Color gris para el enlace activo */
+    .nav-link.active {
+      color: gray !important;
+    }
+
+    /* Evitar que los enlaces cambien de color al hacer clic o al enfocarse */
+    a:focus, a:active {
+      color: inherit !important;
+      text-decoration: none !important;
+    }
+.spectral-italic {
+  font-family: 'Spectral', serif; /* Aplica la fuente Spectral */
+  font-style: italic;             /* Aplica el estilo en cursiva */
+}
+.card-title {
+  margin-bottom: 1px; /* Reduce el margen inferior del título */
+}
+
+
+    /* Ajustar el tamaño de las cartas */
+    .card-img-top {
+      width: 100%;
+      height: 225px;
+      object-fit: cover;
+    }
+    @keyframes slideInDown {
+        0% {
+          transform: translateY(-100%);
+        }
+        100% {
+          transform: translateY(0);
+        }
+
+      }
+      header {
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-name: slideInDown;
+      
+      }
 
 </style>
 </head>
-  <body>
-    <h1> página en construcción... </h1>
-  </body>
+  <body onload="document.body.style.opacity='1'">
+  <div class="container">
+    <!-- Header sin borde inferior -->
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+      <!-- Nombre con la tipografía "Spectral" en cursiva -->
+      <div class="col-md-3 mb-2 mb-md-0">
+        <span class="h4 brand-name">Sofía Rizzoli Dallaserra</span>
+      </div>
+
+      <!-- Navegación -->
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+  <li><a href="index.html" class="nav-link px-4 active"  aria-current="page">Archive</a></li>
+  <li><a href="about.html" class="nav-link px-4">About</a></li>
+  <li><a href="contacto.html" class="nav-link px-4">Más</a></li>
+</ul>
+
+    </header>
+
+
+
+    <!-- Contenido de la página de "Proyectos" con cartas -->
+    <section>
+      
+
+      <div class="album py-2">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-1">
+            <!-- Carta 1 -->
+            <div class="col">
+              <div class="card shadow-sm">
+               <img src="https://github.com/user-attachments/assets/e13f2dce-31ce-48b4-90c7-fe69c10bb43b" class="card-img-top" alt="Wheel&Deal" style="width: 100%; height: 405px; object-fit: cover;">
+                <div class="card-body">
+                  <h7 class="card-text spectral-italic">2024</h7>
+                  <h6 class="card-title">Wheel&Deal</h6>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carta 2 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://github.com/user-attachments/assets/ba97dee4-0ec1-45e1-8526-2285df8542c0" class="card-img-top" alt="BikeStop" style="width: 100%; height: 405px; object-fit: cover;">
+                <div class="card-body">
+                  <h7 class="card-text spectral-italic">2023</h7>
+                  <h6 class="card-title">BikeStop</h6>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carta 3 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://github.com/user-attachments/assets/9c7e2211-3cd8-470b-8cc0-1d951bc1e044" class="card-img-top" alt="Proyecto 2" style="width: 100%; height: 405px; object-fit: cover;">
+                <div class="card-body">
+                         <h7 class="card-text spectral-italic">2024</h7>
+                  <h6 class="card-title">Intermodality Santiago</h6>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-1">
+            <!-- Carta 1 -->
+            <div class="col">
+              <div class="card shadow-sm">
+               <img src="https://github.com/user-attachments/assets/e13f2dce-31ce-48b4-90c7-fe69c10bb43b" class="card-img-top" alt="Wheel&Deal" style="width: 100%; height: 405px; object-fit: cover;">
+                <div class="card-body">
+                  <h6 class="card-title">Wheel&Deal</h6>
+                  <h7 class="card-text spectral-italic">2024</h7>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carta 2 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://github.com/user-attachments/assets/ba97dee4-0ec1-45e1-8526-2285df8542c0" class="card-img-top" alt="BikeStop" style="width: 100%; height: 405px; object-fit: cover;">
+                <div class="card-body">
+                  <h6 class="card-title">BikeStop</h6>
+                  <h7 class="card-text spectral-italic mb-0">2024</h7>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carta 3 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://github.com/user-attachments/assets/9c7e2211-3cd8-470b-8cc0-1d951bc1e044" class="card-img-top" alt="Proyecto 2" style="width: 100%; height: 405px; object-fit: cover;">
+                <div class="card-body">
+                  <h6 class="card-title">Intermodality Santiago</h6>
+                  <h7 class="card-text">2024</h7>
+                </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+</body>
 </html>
