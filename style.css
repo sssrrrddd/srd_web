@@ -68,3 +68,7 @@ header {
   animation-iteration-count: 1;
   animation-name: slideInDown;
 }
+        .card {
+            border: none; /* Elimina el borde */
+            box-shadow: none; /* Elimina sombras adicionales */
+        }
