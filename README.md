@@ -65,10 +65,10 @@ Revisa portafolios de diseñadores o plataformas que ofrezcan proyectos listos p
 1. Positivo: Diseño minimalista que permite a los proyectos destacar sin distracciones y mezcla contenido análogo con digital.
 2.Negativo: Al ser muy simple y no tener tanta interactividad quizas el usuario pierde interés en el storytelling de la pagina.
 
-*Wick Telgenkamp (https://wicktelgenkamp.com/)*
+*Wick Telgenkamp (https://lau.work/)*
 
-1. Positivo: Es simple y atractivo a simple vista, tiene buena selección de imagenes de proyectos, todas son atractivas y los margenes funcionan bien para darle ligereza a la lectura de la pagina.
-2. Negativo: No proporciona mucha información de lo que trata cada proyecto, solo en general del diseñador
+1. Positivo: Me gusta mucho la simplicidad, que sea minimalista y clara la forma de mostrar los proyectos. Con su respectiva descripcion y un header claro y simple.
+2. Negativo: Quias darle mas prioridad a los proyectos y que el about este en otra pagina aparte
 
 *JMLC (https://jmlcjmlc.com/)*
 
