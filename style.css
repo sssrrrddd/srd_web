@@ -78,7 +78,6 @@ a:focus, a:active {
   100% {
     transform: translateY(0);
   }
-}
 
 header {
   animation-duration: 0.5s;
