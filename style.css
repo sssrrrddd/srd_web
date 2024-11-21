@@ -31,12 +31,6 @@ body {
   color: gray !important;
 }
 
-/* Evitar que los enlaces cambien de color al hacer clic o al enfocarse */
-a:focus, a:active {
-  color: inherit !important;
-  text-decoration: none !important;
-}
-
 .spectral-italic {
   font-family: 'Spectral', serif;
   font-style: italic;
@@ -85,25 +79,4 @@ header {
   animation-delay: 0s;
   animation-iteration-count: 1;
   animation-name: slideInDown;
-}
-
-.cuerpo {
-  font-weight: light;
-  font-family: "Raleway", sans-serif;
-  color: black !important; /* Forzar el color negro */
-  text-decoration: none; /* Quitar subrayado */
-  padding: 10px;
-}
-
-/* Estilo del cuerpo y la imagen */
-body {
-  margin: 0;
-  overflow: hidden; /* Evita scroll innecesario */
-  height: 100vh;
-  width: 100vw;
-  position: relative; /* Define el contenedor para los límites */
-}
-
-a:hover {
-  color: gray;
 }
