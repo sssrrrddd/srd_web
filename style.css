@@ -104,12 +104,6 @@ body {
   position: relative; /* Define el contenedor para los límites */
 }
 
-img#bouncingImage {
-  width: 300px; /* Ajusta el tamaño según tu preferencia */
-  height: 300px;
-  position: absolute; /* Permite que se mueva libremente */
-}
-
 a:hover {
   color: gray;
 }
