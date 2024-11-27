@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sofía Rizzoli Dallaserra</title>
+
+  <!-- Importar la fuente "Spectral" de Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital@1&display=swap" rel="stylesheet">
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <img id="bouncingImage" src="https://github.com/sssrrrddd/srd_web/blob/main/yo.png?raw=true" alt="yo">
+
+  <main>
+    <div class="container">
+      <!-- Header sin borde inferior -->
+      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+        <!-- Nombre con la tipografía "Spectral" en cursiva -->
+        <div class="col-md-3 mb-2 mb-md-0">
+          <span class="h4 brand-name">Sofía Rizzoli Dallaserra</span>
+        </div>
+        <!-- Navegación -->
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="index.html" class="nav-link px-4">Archive</a></li>
+          <li><a href="about.html" class="nav-link px-4 active" aria-current="page">About</a></li>
+          <li><a href="contacto.html" class="nav-link px-4">Más</a></li>
+        </ul>
+      </header>
+
+      <!-- Contenido de la página -->
+<section>
+  <div style="display: flex; align-items: flex-start; width: 450px; font-family: 'Spectral', serif; color: black; margin-top: 20px;">
+    <h4 style="margin: 0; margin-top: 4px;padding-right: 20px; flex-basis: 150px; flex-shrink: 0;">Bienvenido/a</h4>
+    <div>
+      <p class="cuerpo" style="margin: 0;">Soy estudiante de <strong class="brand-name" style="color: #0800ff;">diseño integral</strong> en la Pontificia Universidad Católica de Chile desde el 2021. Me apasiona el diseño de cosas, objetos, productos, así como también jugar fútbol, conocer nuevos lugares y pasar tiempo con mis amigas.  </p>
+      
+      <a class="cuerpo" style="display: block; margin-top: 10px;">Puedes encontrarme en:</a>
+      <ul style="margin-top: 12px; margin-left: -20px; list-style-type: none;">
+        <li>
+          <a href="https://linkedin.com" target="_blank" style="text-decoration: none;font-family: 'Spectral', serif; font-style: italic; color: #0800ff;">LinkedIn</a>
+        </li>
+        <li>
+          <a href="ssrrdd@uc.cl" style="text-decoration: none; font-family: 'Spectral', serif; font-style: italic; color: #0800ff;">Correo</a>
+        </li>
+        <li>
+          <a href="https://instagram.com" target="_blank" style="text-decoration: none; font-family: 'Spectral', serif; font-style: italic; color: #0800ff;">Instagram</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    </div>
+  </main>
+
+  <script>
+    // Configuración inicial
+    const image = document.getElementById('bouncingImage');
+    const speed = 2; // Velocidad del movimiento (px por frame)
+    let dx = speed; // Dirección en el eje X
+    let dy = speed; // Dirección en el eje Y
+
+    // Posición inicial de la imagen
+    let currentX = window.innerWidth / 2;
+    let currentY = window.innerHeight / 2;
+
+    // Estado del movimiento: activo o pausado
+    let isMoving = true;
+
+    // Configuración inicial de la posición CSS
+    image.style.left = `${currentX}px`;
+    image.style.top = `${currentY}px`;
+
+    // Obtener dimensiones de la ventana y la imagen
+    const updateWindowSize = () => {
+      return {
+        windowWidth: window.innerWidth,
+        windowHeight: window.innerHeight,
+        imageWidth: image.offsetWidth,
+        imageHeight: image.offsetHeight,
+      };
+    };
+
+    let { windowWidth, windowHeight, imageWidth, imageHeight } = updateWindowSize();
+
+    // Actualizar dimensiones si la ventana cambia de tamaño
+    window.addEventListener('resize', () => {
+      ({ windowWidth, windowHeight, imageWidth, imageHeight } = updateWindowSize());
+    });
+
+    // Función para mover la imagen
+    const moveImage = () => {
+      if (!isMoving) return; // Si el movimiento está pausado, no hacer nada
+
+      // Calcular nuevas posiciones
+      let newX = currentX + dx;
+      let newY = currentY + dy;
+
+      // Verificar si la imagen se ha salido de los límites
+      if (newX + imageWidth < 0 || newX > windowWidth || newY + imageHeight < 0 || newY > windowHeight) {
+        isMoving = false; // Pausar movimiento
+        setTimeout(() => {
+          // Reaparecer en una posición aleatoria dentro de la pantalla
+          currentX = Math.random() * (windowWidth - imageWidth);
+          currentY = Math.random() * (windowHeight - imageHeight);
+          image.style.left = `${currentX}px`;
+          image.style.top = `${currentY}px`;
+          isMoving = true; // Reanudar movimiento
+          moveImage(); // Continuar animación
+        }, 5000); // Pausar 5 segundos antes de volver a aparecer
+        return; // Salir de la función actual
+      }
+
+      // Verificar colisiones con los límites
+      if (newX <= 0 || newX + imageWidth >= windowWidth) {
+        dx *= -1; // Cambia dirección en X
+      }
+
+      if (newY <= 0 || newY + imageHeight >= windowHeight) {
+        dy *= -1; // Cambia dirección en Y
+      }
+
+      // Actualizar posiciones
+      currentX = newX;
+      currentY = newY;
+      image.style.left = `${currentX}px`;
+      image.style.top = `${currentY}px`;
+
+      // Continuar animación
+      requestAnimationFrame(moveImage);
+    };
+
+    // Función para alternar el estado de movimiento (pausar o reanudar)
+    image.addEventListener('click', () => {
+      isMoving = !isMoving; // Cambiar el estado de movimiento
+      if (isMoving) {
+        moveImage(); // Reanudar movimiento si está pausado
+      }
+    });
+
+    // Iniciar el movimiento
+    moveImage();
+  </script>
+</body>
+</html>
