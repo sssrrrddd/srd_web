@@ -1,106 +1,110 @@
 body {
-  opacity: 0;
-  transition: opacity 1s;
+    opacity: 0;
+    transition: opacity 1s;
 }
 
 .nav {
-  font-weight: bold;
-  color: grey; /* Forzar el color negro */
-  text-decoration: none; /* Quitar subrayado */
+    font-weight: bold;
+    color: grey; /* Forzar el color negro */
+    text-decoration: none; /* Quitar subrayado */
 }
 
 /* Cambiar el color de los enlaces a negro por defecto */
 .nav-link {
-  font-weight: bold;
-  color: black !important; /* Forzar el color negro */
-  text-decoration: none; /* Quitar subrayado */
+    font-weight: bold;
+    color: black !important; /* Forzar el color negro */
+    text-decoration: none; /* Quitar subrayado */
 }
 
 /* Cambiar el color al pasar el mouse (hover) a gris */
 .nav-link:hover {
-  color: gray !important;
+    color: gray !important;
 }
 
 /* Color gris para el enlace activo */
 .nav-link.active {
-  color: gray !important;
+    color: gray !important;
 }
 
 .spectral-italic {
-  font-family: 'Spectral', serif;
-  font-style: italic;
+    font-family: "Spectral", serif;
+    font-style: italic;
 }
 
 @keyframes slideInDown {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
- }
-header {
-  animation-duration: 0.5s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-name: slideInDown;
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
-        .scrolling-text {
-            width: 100%;
-            overflow: hidden;
-            white-space: nowrap;
-            box-sizing: border-box;
-            animation: scrolling-text 20s linear infinite;
-            font-family: 'Spectral', serif;
-            font-style: italic;
-            color: #0800ff;
-            margin-top: -20px; /* Adjust this value to control the distance from the header */
-        }
+header {
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInDown;
+}
+.scrolling-text {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: scrolling-text 20s linear infinite;
+    font-family: "Spectral", serif;
+    font-style: italic;
+    color: #0800ff;
+    margin-top: -20px; /* Adjust this value to control the distance from the header */
+}
 
-        @keyframes scrolling-text {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
-        }
+@keyframes scrolling-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
 
-        .brand-name {
-            font-family: 'Spectral', serif;
-            font-style: italic;
-        }
+.brand-name {
+    font-family: "Spectral", serif;
+    font-style: italic;
+}
 
-        .nombre {
-            font-family: 'Spectral', serif;
-            font-style: italic;
-            color: #0800ff;
-            margin-top: -20px; /* Adjust this value to control the distance from the header */
-        }
+.nombre {
+    font-family: "Spectral", serif;
+    font-style: italic;
+    color: #0800ff;
+    margin-top: -20px; /* Adjust this value to control the distance from the header */
+}
 
-        .card {
-            border: none; /* Remove the border */
-        }
+.card {
+    border: none; /* Remove the border */
+}
 
-        .card img {
-            border-radius: 0; /* Remove the border radius */
-            transition: opacity 0.5s ease-in-out; /* Smooth transition */
-        }
+.card img {
+    border-radius: 0; /* Remove the border radius */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+}
 
-        .card .hover-image {
-            display: none;
-        }
+.card .hover-image {
+    display: none;
+}
 
-        .card:hover .default-image {
-            display: none;
-        }
+.card:hover .default-image {
+    display: none;
+}
 
-        .card:hover .hover-image {
-            display: block;
-        }
+.card:hover .hover-image {
+    display: block;
+}
 
-        .card .card-body {
-            text-align: center; /* Center the text */
-            transition: transform 0.3s ease-in-out; /* Smooth transition for text */
-        }
+.card .card-body {
+    text-align: center; /* Center the text */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for text */
+}
 
-        .card:hover .card-body {
-            transform: translateY(-10px); /* Slight lift on hover */
-        }
+.card:hover .card-body {
+    transform: translateY(-10px); /* Slight lift on hover */
+}
