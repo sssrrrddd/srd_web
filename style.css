@@ -38,7 +38,7 @@ body {
   100% {
     transform: translateY(0);
   }
-
+ }
 header {
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
