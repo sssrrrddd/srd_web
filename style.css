@@ -1,6 +1,8 @@
-/* Estilo para el nombre con la fuente "Spectral" en cursiva */
 body {
-    min-height: 120vh; /* Para comprobar si el scroll funciona */
+  margin: 0;
+  overflow: auto; /* Permite scroll automático si el contenido lo requiere */
+  height: auto; /* Deja que el contenido determine la altura */
+  position: relative;
 }
 
 .brand-name {
