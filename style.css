@@ -43,7 +43,6 @@ a:focus, a:active {
 /* Animación del texto desplazable */
 .scrolling-text {
   width: 100%;
-  overflow: hidden;
   white-space: nowrap;
   box-sizing: border-box;
   animation: scrolling-text 20s linear infinite;
