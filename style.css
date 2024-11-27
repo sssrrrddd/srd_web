@@ -93,15 +93,6 @@ a:focus, a:active {
   transform: translateY(-10px); /* Levantamiento al hacer hover */
 }
 
-/* Estilo del cuerpo y la imagen */
-body {
-  margin: 0;
-  overflow: hidden; /* Evitar scroll innecesario */
-  height: 100vh;
-  width: 100vw;
-  position: relative; /* Define el contenedor para los límites */
-}
-
 img#bouncingImage {
   width: 300px; /* Tamaño de la imagen */
   height: 300px;
