@@ -1,110 +1,123 @@
-body {
-    opacity: 0;
-    transition: opacity 1s;
+/* Estilo para el nombre con la fuente "Spectral" en cursiva */
+.brand-name {
+  font-family: 'Spectral', serif;
+  font-style: italic;
 }
 
-.nav {
-    font-weight: bold;
-    color: grey; /* Forzar el color negro */
-    text-decoration: none; /* Quitar subrayado */
-}
-
-/* Cambiar el color de los enlaces a negro por defecto */
+/* Navegación */
 .nav-link {
-    font-weight: bold;
-    color: black !important; /* Forzar el color negro */
-    text-decoration: none; /* Quitar subrayado */
+  font-weight: bold;
+  font-family: 'Helvetica', sans;
+  color: black !important; /* Forzar el color negro */
+  text-decoration: none; /* Quitar subrayado */
 }
 
-/* Cambiar el color al pasar el mouse (hover) a gris */
 .nav-link:hover {
-    color: gray !important;
+  color: gray !important; /* Forzar el color gris en hover */
 }
 
-/* Color gris para el enlace activo */
 .nav-link.active {
-    color: gray !important;
+  color: gray !important;
 }
 
-.spectral-italic {
-    font-family: "Spectral", serif;
-    font-style: italic;
+a:focus, a:active {
+  color: inherit !important;
+  text-decoration: none !important;
 }
 
-@keyframes slideInDown {
-    0% {
-        transform: translateY(-100%);
-    }
-    100% {
-        transform: translateY(0);
-    }
+/* Contenido principal */
+.cuerpo {
+  font-weight: light;
+  font-family: 'Helvetica', sans;
+  color: black !important; /* Forzar el color negro */
+  text-decoration: none; /* Quitar subrayado */
+  padding: 10px;
 }
-header {
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-name: slideInDown;
-}
+
+/* Animación del texto desplazable */
 .scrolling-text {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-    animation: scrolling-text 20s linear infinite;
-    font-family: "Spectral", serif;
-    font-style: italic;
-    color: #0800ff;
-    margin-top: -20px; /* Adjust this value to control the distance from the header */
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  animation: scrolling-text 20s linear infinite;
+  font-family: 'Spectral', serif;
+  font-style: italic;
+  color: #0800ff;
+  margin-top: -20px; /* Ajustar la distancia desde el encabezado */
 }
 
 @keyframes scrolling-text {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
-.brand-name {
-    font-family: "Spectral", serif;
-    font-style: italic;
-}
-
-.nombre {
-    font-family: "Spectral", serif;
-    font-style: italic;
-    color: #0800ff;
-    margin-top: -20px; /* Adjust this value to control the distance from the header */
-}
-
+/* Cartas */
 .card {
-    border: none; /* Remove the border */
+  border: none; /* Eliminar bordes */
 }
 
 .card img {
-    border-radius: 0; /* Remove the border radius */
-    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+  border-radius: 0; /* Sin bordes redondeados */
+  transition: opacity 0.5s ease-in-out; /* Transición suave */
 }
 
 .card .hover-image {
-    display: none;
+  display: none;
 }
 
 .card:hover .default-image {
-    display: none;
+  display: none;
 }
 
 .card:hover .hover-image {
-    display: block;
+  display: block;
 }
 
 .card .card-body {
-    text-align: center; /* Center the text */
-    transition: transform 0.3s ease-in-out; /* Smooth transition for text */
+  text-align: center; /* Centrar texto */
+  transition: transform 0.3s ease-in-out; /* Animación para texto */
 }
 
 .card:hover .card-body {
-    transform: translateY(-10px); /* Slight lift on hover */
+  transform: translateY(-10px); /* Levantamiento al hacer hover */
+}
+
+/* Estilo del cuerpo y la imagen */
+body {
+  margin: 0;
+  overflow: hidden; /* Evitar scroll innecesario */
+  height: 100vh;
+  width: 100vw;
+  position: relative; /* Define el contenedor para los límites */
+}
+
+img#bouncingImage {
+  width: 300px; /* Tamaño de la imagen */
+  height: 300px;
+  position: absolute; /* Permite movimiento libre */
+  animation: rotate 5s linear infinite; /* Rotación infinita */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animación de movimiento de imagen */
+@keyframes move-image {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }
