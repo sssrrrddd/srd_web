@@ -1,7 +1,7 @@
 body {
     margin: 0;
-    overflow: auto;
-    height: auto;
+    overflow: auto; /* Permite scroll automático si el contenido lo requiere */
+    height: auto; /* Deja que el contenido determine la altura */
     position: relative;
 }
 
@@ -10,15 +10,16 @@ body {
     font-style: italic;
 }
 
+/* Navegación */
 .nav-link {
     font-weight: bold;
     font-family: "Helvetica", sans;
-    color: black !important;
-    text-decoration: none;
+    color: black !important; /* Forzar el color negro */
+    text-decoration: none; /* Quitar subrayado */
 }
 
 .nav-link:hover {
-    color: gray !important;
+    color: gray !important; /* Forzar el color gris en hover */
 }
 
 .nav-link.active {
@@ -31,6 +32,15 @@ a:active {
     text-decoration: none !important;
 }
 
+/* Contenido principal */
+.cuerpo {
+    font-weight: light;
+    font-family: "Helvetica", sans;
+    color: black !important; /* Forzar el color negro */
+    text-decoration: none; /* Quitar subrayado */
+    padding: 10px;
+}
+
 /* Animación del texto desplazable */
 .scrolling-text {
     width: 100%;
@@ -40,7 +50,7 @@ a:active {
     font-family: "Spectral", serif;
     font-style: italic;
     color: #0800ff;
-    margin-top: -20px;
+    margin-top: -20px; /* Ajustar la distancia desde el encabezado */
 }
 
 @keyframes scrolling-text {
@@ -52,103 +62,63 @@ a:active {
     }
 }
 
-/* Título alineado a la derecha */
-.title {
-    font-family: 'Spectral', serif;
-    font-size: 2.5rem;
-    color: #0800ff;
-    text-align: right;  /* Alinear a la derecha */
-    margin-top: 30px;
-    margin-left: 20px;  /* Mover el título hacia la derecha */
+/* Cartas */
+.card {
+    border: none; /* Eliminar bordes */
 }
 
-/* Descripción debajo del título */
-.description {
-    font-family: 'Helvetica', sans-serif;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-top: 10px;
-    text-align: right; /* Alinear a la derecha */
-    margin-left: 20px;  /* Mover la descripción hacia la derecha */
+.card img {
+    border-radius: 0; /* Sin bordes redondeados */
+    transition: opacity 0.5s ease-in-out; /* Transición suave */
 }
 
-.images {
-    display: flex;
-    flex-wrap: nowrap; /* No permitir que las imágenes se envuelvan en una nueva fila */
-    gap: 10px; /* Espacio entre las imágenes */
-    margin-top: 20px;
-    justify-content: center; /* Centrar las imágenes horizontalmente */
+.card .hover-image {
+    display: none;
 }
 
-.images img {
-    width: 33.33%; /* Cada imagen ocupa un tercio de la pantalla */
-    height: auto;
-    object-fit: cover; /* Mantener el aspecto de la imagen */
-    margin-bottom: 10px;
-}
-/* Estilo del enlace "Volver a la página principal" */
-.back-to-archive {
-    margin-top: 10px;
-    text-align: left;
-    font-family: "Spectral", serif;
-    font-style: italic;
-    color: #0800ff;
-    
-    
+.card:hover .default-image {
+    display: none;
 }
 
-.back-link {
-    font-family: "Helvetica", sans-serif;
-    font-size: 1rem;
-    color: #0800ff;
-    text-decoration: none;
+.card:hover .hover-image {
+    display: block;
 }
 
-.back-link:hover {
-    text-decoration: underline;
-    color: gray;
+.card .card-body {
+    text-align: center; /* Centrar texto */
+    transition: transform 0.3s ease-in-out; /* Animación para texto */
 }
 
-    img#bouncingImage {
-      width: 300px; /* Ajusta el tamaño según tu preferencia */
-      height: 300px;
-      position: absolute; /* Permite que se mueva libremente */
-      animation: rotate 5s linear infinite; /* Rotación infinita */
-    }
+.card:hover .card-body {
+    transform: translateY(-10px); /* Levantamiento al hacer hover */
+}
 
-    @keyframes rotate {
-      from {
+img#bouncingImage {
+    width: 300px; /* Tamaño de la imagen */
+    height: 300px;
+    position: absolute; /* Permite movimiento libre */
+    animation: rotate 5s linear infinite; /* Rotación infinita */
+}
+
+@keyframes rotate {
+    from {
         transform: rotate(0deg);
-      }
-      to {
+    }
+    to {
         transform: rotate(360deg);
-      }
-                    .card {
-                border: none; /* Remove the border */
-            }
+    }
+}
 
-            .card img {
-                border-radius: 0; /* Remove the border radius */
-                transition: opacity 0.5s ease-in-out; /* Smooth transition */
-            }
-
-            .card .hover-image {
-                display: none;
-            }
-
-            .card:hover .default-image {
-                display: none;
-            }
-
-            .card:hover .hover-image {
-                display: block;
-            }
-
-            .card .card-body {
-                text-align: center; /* Center the text */
-                transition: transform 0.3s ease-in-out; /* Smooth transition for text */
-            }
-
-            .card:hover .card-body {
-                transform: translateY(-10px); /* Slight lift on hover */
-            }
+/* Animación de movimiento de imagen */
+@keyframes move-image {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+bi {
+    vertical-align: -0.125em;
+    fill: currentColor;
+}
