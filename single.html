@@ -33,12 +33,12 @@
             <div class="scrolling-text">
                 design student - based in Stgo.CL
             </div>
-    <!-- Project Content -->
-    <h1 id="title" class="project-title">Loading...</h1>
-    <p id="description" class="project-description">Loading description...</p>
+  <!-- Project Content -->
+    <h1 id="title" class="title">Loading...</h1>
+    <p id="description" class="description">Loading description...</p>
 
     <!-- Project Images -->
-    <div id="project-images" class="project-images"></div>
+    <div id="images" class="images"></div>
   </div>
 
   <!-- Inline Script -->
@@ -49,28 +49,28 @@
         const projectId = urlParams.get('id');
 
         if (!projectId) {
-            document.getElementById('project-title').textContent = 'Project not found';
+            document.getElementById('title').textContent = 'Project not found';
             return;
         }
 
-        // Cargar el archivo JSON
-        fetch('datos.json') // Cambiado a datos.json
+        // Cargar el archivo JSON desde GitHub
+        fetch('https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/datos.json') // URL del JSON en GitHub
             .then(response => response.json())
             .then(data => {
                 // Busca el proyecto por ID
                 const project = data.find(item => item.id === projectId);
 
                 if (!project) {
-                    document.getElementById('project-title').textContent = 'Project not found';
+                    document.getElementById('title').textContent = 'Project not found';
                     return;
                 }
 
                 // Actualiza el HTML con los datos del proyecto
-                document.getElementById('project-title').textContent = project.title;
-                document.getElementById('project-description').textContent = project.description;
+                document.getElementById('title').textContent = project.title; // Título del proyecto
+                document.getElementById('description').textContent = project.description; // Descripción del proyecto
 
                 // Muestra las imágenes del proyecto
-                const imagesContainer = document.getElementById('project-images');
+                const imagesContainer = document.getElementById('images');
                 project.images.forEach(image => {
                     const imgElement = document.createElement('img');
                     imgElement.src = image;
@@ -80,7 +80,7 @@
             })
             .catch(error => {
                 console.error('Error loading project:', error);
-                document.getElementById('project-title').textContent = 'Error loading project';
+                document.getElementById('title').textContent = 'Error loading project';
             });
     });
   </script>
