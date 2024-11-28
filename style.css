@@ -122,14 +122,9 @@ bi {
     fill: currentColor;
 }
 
-    /* Header Styles */
-    .brand-name {
-        font-family: 'Spectral', serif;
-        font-style: italic;
-    }
 
     /* Title Styles */
-    .project-title {
+    .title {
         font-family: 'Spectral', serif;
         font-size: 2.5rem;
         color: #0800ff;
@@ -137,7 +132,7 @@ bi {
     }
 
     /* Description Styles */
-    .project-description {
+    .description {
         font-family: 'Helvetica', sans-serif;
         font-size: 1.1rem;
         line-height: 1.6;
@@ -145,7 +140,7 @@ bi {
     }
 
     /* Image Styles */
-    .project-images img {
+    .images img {
         width: 100%;
         height: auto;
         margin-bottom: 20px;
