@@ -1,0 +1,42 @@
+[
+    {
+        "nombre": "Wheel&Deal",
+        "fecha": "2024",
+        "descripcion": "Descripción del Plato 1.",
+        "foto": "https://ejemplo.com/imagen1.jpg",
+        "fotos": ["https://ejemplo.com/imagen2.jpg", "https://ejemplo.com/imagen3.jpg"],
+        "github": "https://github.com/proyecto1"
+    },
+    {
+        "nombre": "BikeStop",
+        "fecha": "2023",
+        "descripcion": "Descripción del Plato 2.",
+        "foto": "https://ejemplo.com/imagen4.jpg",
+        "fotos": ["https://ejemplo.com/imagen5.jpg", "https://ejemplo.com/imagen6.jpg"],
+        "github": "https://github.com/proyecto2"
+    },
+    {
+        "nombre": "Yunus Community Center",
+        "fecha": "2023",
+        "descripcion": "La lasaña es un plato tradicional italiano que se elabora en capas. Se comienza cocinando una salsa boloñesa hecha con carne molida, tomate, cebolla, ajo, zanahoria y especias como el orégano y la albahaca. Alternativamente, se colocan capas de pasta para lasaña, la salsa de carne, salsa bechamel y queso rallado. Las capas se repiten hasta completar la altura deseada, terminando con una capa de queso para gratinar. Finalmente, se hornea hasta que la pasta esté tierna y el queso, dorado.",
+        "foto": "Lasagna.jpg",
+        "fotos": ["lasagna-1.jpg", "lasagna-2.jpg","lasagna-3.jpg"],
+        "github": "https://github.com/sssrrrddd"
+    },
+    {
+        "nombre": "Stgo Intermodal",
+        "fecha": "2024",
+        "descripcion": "La panna cotta es un postre italiano cremoso y delicado que se elabora a base de nata (crema de leche), azúcar y gelatina. Se calienta la nata con el azúcar y una pizca de vainilla, y luego se añade gelatina disuelta para darle consistencia. Una vez mezclado, se vierte en moldes y se deja enfriar en el refrigerador hasta que cuaje. Tradicionalmente, se sirve desmoldada y se acompaña de frutas frescas, coulis de frutas o caramelo para un contraste de sabores y texturas.",
+        "foto": "PannaCotta.jpg",
+        "fotos": ["pannacotta-1.jpg", "pannacotta-2.jpg","pannacotta-3.jpg"],
+        "github": "https://github.com/sssrrrddd"
+    },
+    {
+        "nombre": "Equita",
+        "fecha": "2024",
+        "descripcion": "El tiramisú es un postre italiano clásico, suave y de sabor intenso, elaborado con capas de bizcochos empapados en café espresso y una mezcla de queso mascarpone, yemas de huevo y azúcar. Para montarlo, se coloca una capa de bizcochos mojados en café, seguida de una capa de la crema de mascarpone, y se repite hasta completar el molde. Finalmente, se espolvorea con cacao en polvo y se refrigera varias horas para que los sabores se integren. Es un postre que combina el sabor amargo del café con la cremosidad del mascarpone y el toque dulce del cacao.",
+        "foto": "Tiramisu.jpg",
+        "fotos": ["tiramisu-1.jpg", "tiramisu-2.jpg","tiramisu-3.jpg"],
+        "github": "https://github.com/sssrrrddd"
+    }
+]
