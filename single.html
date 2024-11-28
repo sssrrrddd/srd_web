@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="style.css" rel="stylesheet" />
+    <title>Rizzoli Dallaserra</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="project-title"></h1>
+        <img id="project-image" alt="Project Image" />
+        <p id="project-description"></p>
+        <a href="index.html">Back to Archive</a>
+    </div>
+
+    <script>
+        // Obtener el ID del proyecto desde la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const projectId = urlParams.get('id');
+
+        // Cargar los datos del JSON
+        fetch('projects.json')
+            .then(response => response.json())
+            .then(data => {
+                // Encontrar el proyecto por ID
+                const project = data.find(p => p.id === projectId);
+
+                if (project) {
+                    // Actualizar el contenido de la página
+                    document.getElementById('project-title').textContent = project.title;
+                    document.getElementById('project-image').src = project.image;
+                    document.getElementById('project-description').textContent = project.description;
+                } else {
+                    document.body.innerHTML = '<h1>Project not found</h1>';
+                }
+            })
+            .catch(error => {
+                console.error('Error loading project data:', error);
+            });
+    </script>
+</body>
+</html>
