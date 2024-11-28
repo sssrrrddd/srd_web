@@ -54,21 +54,22 @@ a:active {
 
 /* Título alineado a la derecha */
 .title {
-    font-family: "Spectral", serif;
+    font-family: 'Spectral', serif;
     font-size: 2.5rem;
     color: #0800ff;
+    text-align: right;  /* Alinear a la derecha */
     margin-top: 30px;
-    margin-left: 20px; /* Desplaza el título unos píxeles a la izquierda */
+    margin-left: 20px;  /* Mover el título hacia la derecha */
 }
 
 /* Descripción debajo del título */
 .description {
-    font-family: "Helvetica", sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-size: 1.1rem;
-    color: black; /* Cambia el color a negro */
     line-height: 1.6;
-    margin-top: 20px;
-    margin-left: 20px; /* Desplaza la descripción unos píxeles a la izquierda */
+    margin-top: 10px;
+    text-align: right; /* Alinear a la derecha */
+    margin-left: 20px;  /* Mover la descripción hacia la derecha */
 }
 
 .images {
@@ -92,16 +93,13 @@ a:active {
     font-family: "Spectral", serif;
     font-style: italic;
     color: #0800ff;
-    margin-top: 20px;
-    margin-left: 30px; /* Añade más distancia desde el borde izquierdo */
     
     
 }
 
 .back-link {
-    font-family: "Spectral", serif;
-    font-style: italic;
-    font-size: 1.1rem;
+    font-family: "Helvetica", sans-serif;
+    font-size: 1rem;
     color: #0800ff;
     text-decoration: none;
 }
@@ -110,4 +108,3 @@ a:active {
     text-decoration: underline;
     color: gray;
 }
-
