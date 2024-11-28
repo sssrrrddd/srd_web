@@ -122,3 +122,33 @@ bi {
     vertical-align: -0.125em;
     fill: currentColor;
 }
+
+    /* Header Styles */
+    .brand-name {
+        font-family: 'Spectral', serif;
+        font-style: italic;
+    }
+
+    /* Title Styles */
+    .project-title {
+        font-family: 'Spectral', serif;
+        font-size: 2.5rem;
+        color: #0800ff;
+        margin-top: 30px;
+    }
+
+    /* Description Styles */
+    .project-description {
+        font-family: 'Helvetica', sans-serif;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-top: 20px;
+    }
+
+    /* Image Styles */
+    .project-images img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+  
