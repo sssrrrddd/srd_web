@@ -72,7 +72,6 @@ a:active {
     margin-left: 20px;  /* Mover la descripción hacia la derecha */
 }
 
-/* Estilo para las imágenes */
 .images {
     display: flex;
     flex-wrap: nowrap; /* No permitir que las imágenes se envuelvan en una nueva fila */
@@ -91,6 +90,11 @@ a:active {
 .back-to-archive {
     margin-top: 10px;
     text-align: left;
+    font-family: "Spectral", serif;
+    font-style: italic;
+    color: #0800ff;
+    
+    
 }
 
 .back-link {
