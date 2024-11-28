@@ -123,3 +123,32 @@ a:active {
       to {
         transform: rotate(360deg);
       }
+                    .card {
+                border: none; /* Remove the border */
+            }
+
+            .card img {
+                border-radius: 0; /* Remove the border radius */
+                transition: opacity 0.5s ease-in-out; /* Smooth transition */
+            }
+
+            .card .hover-image {
+                display: none;
+            }
+
+            .card:hover .default-image {
+                display: none;
+            }
+
+            .card:hover .hover-image {
+                display: block;
+            }
+
+            .card .card-body {
+                text-align: center; /* Center the text */
+                transition: transform 0.3s ease-in-out; /* Smooth transition for text */
+            }
+
+            .card:hover .card-body {
+                transform: translateY(-10px); /* Slight lift on hover */
+            }
