@@ -3,7 +3,7 @@
     "id": "1",
     "title": "Wheel & Deal",
     "description": "Diseño de escenario especultivo donde se rediseña el acceso a los servicios pensando en la bicicleta como medio de transporte principal",
-    "images": ["wheel-1.jpg", "wheel-2.jpg", "wheel-3.jpg"]
+    "images": ["imgs/wheel-1.jpg", "imgs/wheel-2.jpg", "imgs/wheel-3.jpg"]
     },
     {
     "id": "2",
