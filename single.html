@@ -7,66 +7,84 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Spectral:ital@1&display=swap" rel="stylesheet">
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" />
-
+  <link href="style.css" rel="stylesheet" />
 
 </head>
 
-  <body>
-            <!-- Scrolling Text -->
-            <div class="scrolling-text">
-                design student - based in Stgo.CL
+<body onload="document.body.style.opacity='1'">
+    <div class="container">
+        <!-- Header con el enlace "Volver a la página principal" -->
+        <header class="d-flex flex-wrap align-items-center justify-content-between py-3 mb-1">
+            <div class="col-md-3 mb-2 mb-md-0">
+                <span class="h4 brand-name">Sofía Rizzoli Dallaserra</span>
             </div>
-  <!-- Project Content -->
-    <h1 id="title" class="title">Loading...</h1>
-    <p id="description" class="description">Loading description...</p>
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="index.html" class="nav-link px-4 active" aria-current="page">Archive</a></li>
+                <li><a href="about.html" class="nav-link px-4">About</a></li>
+                <li><a href="contacto.html" class="nav-link px-4">Más</a></li>
+            </ul>
+        </header>
 
-    <!-- Project Images -->
-    <div id="images" class="images"></div>
-  </div>
+        <!-- Enlace para volver a la página principal, colocado arriba a la izquierda -->
+        <div class="back-to-archive">
+            <a href="index.html" class="back-link">Volver a la página principal</a>
+        </div>
 
-  <!-- Inline Script -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        // Obtén el ID del proyecto desde la URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const projectId = urlParams.get('id');
+        <!-- Scrolling Text -->
+        <div class="scrolling-text">
+            design student - based in Stgo.CL
+        </div>
 
-        if (!projectId) {
-            document.getElementById('title').textContent = 'Project not found';
-            return;
-        }
+        <!-- Project Content -->
+        <h1 id="title" class="title">Loading...</h1>
+        <p id="description" class="description">Loading description...</p>
 
-        // Cargar el archivo JSON desde GitHub
-        fetch('https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/datos.json') // URL del JSON en GitHub
-            .then(response => response.json())
-            .then(data => {
-                // Busca el proyecto por ID
-                const project = data.find(item => item.id === projectId);
+        <!-- Project Images -->
+        <div id="images" class="images"></div>
+    </div>
 
-                if (!project) {
-                    document.getElementById('title').textContent = 'Project not found';
-                    return;
-                }
+    <!-- Inline Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Obtén el ID del proyecto desde la URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const projectId = urlParams.get('id');
 
-                // Actualiza el HTML con los datos del proyecto
-                document.getElementById('title').textContent = project.title; // Título del proyecto
-                document.getElementById('description').textContent = project.description; // Descripción del proyecto
+            if (!projectId) {
+                document.getElementById('title').textContent = 'Project not found';
+                return;
+            }
 
-                // Muestra las imágenes del proyecto
-                const imagesContainer = document.getElementById('images');
-                project.images.forEach(image => {
-                    const imgElement = document.createElement('img');
-                    imgElement.src = image;
-                    imgElement.alt = project.title;
-                    imagesContainer.appendChild(imgElement);
+            // Cargar el archivo JSON desde GitHub
+            fetch('https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/datos.json') // URL del JSON en GitHub
+                .then(response => response.json())
+                .then(data => {
+                    // Busca el proyecto por ID
+                    const project = data.find(item => item.id === projectId);
+
+                    if (!project) {
+                        document.getElementById('title').textContent = 'Project not found';
+                        return;
+                    }
+
+                    // Actualiza el HTML con los datos del proyecto
+                    document.getElementById('title').textContent = project.title; // Título del proyecto
+                    document.getElementById('description').textContent = project.description; // Descripción del proyecto
+
+                    // Muestra las imágenes del proyecto
+                    const imagesContainer = document.getElementById('images');
+                    project.images.forEach(image => {
+                        const imgElement = document.createElement('img');
+                        imgElement.src = image;
+                        imgElement.alt = project.title;
+                        imagesContainer.appendChild(imgElement);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error loading project:', error);
+                    document.getElementById('title').textContent = 'Error loading project';
                 });
-            })
-            .catch(error => {
-                console.error('Error loading project:', error);
-                document.getElementById('title').textContent = 'Error loading project';
-            });
-    });
-  </script>
+        });
+    </script>
 </body>
 </html>
