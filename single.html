@@ -1,43 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href="style.css" rel="stylesheet" />
-    <title>Rizzoli Dallaserra</title>
-</head>
-<body>
-    <div class="container">
-        <h1 id="project-title"></h1>
-        <img id="project-image" alt="Project Image" />
-        <p id="project-description"></p>
-        <a href="index.html">Back to Archive</a>
-    </div>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Single Project</title>
 
-    <script>
-        // Obtener el ID del proyecto desde la URL
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital@1&display=swap" rel="stylesheet">
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-1">
+        <div class="col-md-3 mb-2 mb-md-0">
+            <span class="h4 brand-name">Sofía Rizzoli Dallaserra</span>
+        </div>
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="index.html" class="nav-link px-4">Archive</a></li>
+            <li><a href="about.html" class="nav-link px-4">About</a></li>
+            <li><a href="contacto.html" class="nav-link px-4">Más</a></li>
+        </ul>
+    </header>
+
+    <!-- Project Content -->
+    <h1 id="project-title" class="project-title">Loading...</h1>
+    <p id="project-description" class="project-description">Loading description...</p>
+
+    <!-- Project Images -->
+    <div id="project-images" class="project-images"></div>
+  </div>
+
+  <!-- Inline Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Obtén el ID del proyecto desde la URL
         const urlParams = new URLSearchParams(window.location.search);
         const projectId = urlParams.get('id');
 
-        // Cargar los datos del JSON
-        fetch('datos.json')
+        if (!projectId) {
+            document.getElementById('project-title').textContent = 'Project not found';
+            return;
+        }
+
+        // Cargar el archivo JSON
+        fetch('datos.json') // Cambiado a datos.json
             .then(response => response.json())
             .then(data => {
-                // Encontrar el proyecto por ID
-                const project = data.find(p => p.id === projectId);
+                // Busca el proyecto por ID
+                const project = data.find(item => item.id === projectId);
 
-                if (project) {
-                    // Actualizar el contenido de la página
-                    document.getElementById('project-title').textContent = project.title;
-                    document.getElementById('project-image').src = project.image;
-                    document.getElementById('project-description').textContent = project.description;
-                } else {
-                    document.body.innerHTML = '<h1>Project not found</h1>';
+                if (!project) {
+                    document.getElementById('project-title').textContent = 'Project not found';
+                    return;
                 }
+
+                // Actualiza el HTML con los datos del proyecto
+                document.getElementById('project-title').textContent = project.title;
+                document.getElementById('project-description').textContent = project.description;
+
+                // Muestra las imágenes del proyecto
+                const imagesContainer = document.getElementById('project-images');
+                project.images.forEach(image => {
+                    const imgElement = document.createElement('img');
+                    imgElement.src = image;
+                    imgElement.alt = project.title;
+                    imagesContainer.appendChild(imgElement);
+                });
             })
             .catch(error => {
-                console.error('Error loading project data:', error);
+                console.error('Error loading project:', error);
+                document.getElementById('project-title').textContent = 'Error loading project';
             });
-    </script>
+    });
+  </script>
 </body>
 </html>
