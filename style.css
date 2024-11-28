@@ -87,3 +87,21 @@ a:active {
     object-fit: cover; /* Mantener el aspecto de la imagen */
     margin-bottom: 10px;
 }
+/* Estilo del enlace "Volver a la página principal" */
+.back-to-archive {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.back-link {
+    font-family: "Helvetica", sans-serif;
+    font-size: 1rem;
+    color: #0800ff;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
