@@ -108,3 +108,18 @@ a:active {
     text-decoration: underline;
     color: gray;
 }
+
+    img#bouncingImage {
+      width: 300px; /* Ajusta el tamaño según tu preferencia */
+      height: 300px;
+      position: absolute; /* Permite que se mueva libremente */
+      animation: rotate 5s linear infinite; /* Rotación infinita */
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
