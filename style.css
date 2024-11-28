@@ -13,7 +13,94 @@ body {
 .nav-link {
     font-weight: bold;
     font-family: "Helvetica", sans;
-    color: black !important; /* Forzar el color negro */
+    color: black !important; /* Forzar el color negro */body {
+    margin: 0;
+    overflow: auto;
+    height: auto;
+    position: relative;
+}
+
+.brand-name {
+    font-family: "Spectral", serif;
+    font-style: italic;
+}
+
+.nav-link {
+    font-weight: bold;
+    font-family: "Helvetica", sans;
+    color: black !important;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: gray !important;
+}
+
+.nav-link.active {
+    color: gray !important;
+}
+
+a:focus,
+a:active {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+/* Animación del texto desplazable */
+.scrolling-text {
+    width: 100%;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: scrolling-text 20s linear infinite;
+    font-family: "Spectral", serif;
+    font-style: italic;
+    color: #0800ff;
+    margin-top: -20px;
+}
+
+@keyframes scrolling-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Título alineado a la izquierda */
+.title {
+    font-family: 'Spectral', serif;
+    font-size: 2.5rem;
+    color: #0800ff;
+    text-align: left;  /* Alinear a la izquierda */
+    margin-top: 30px;
+}
+
+/* Descripción debajo del título */
+.description {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+    text-align: left; /* Alinear a la izquierda */
+}
+
+/* Estilo para las imágenes */
+.images {
+    display: flex;
+    flex-wrap: nowrap; /* No permitir que las imágenes se envuelvan en una nueva fila */
+    gap: 10px; /* Espacio entre las imágenes */
+    margin-top: 20px;
+    justify-content: center; /* Centrar las imágenes horizontalmente */
+}
+
+.images img {
+    width: 33.33%; /* Cada imagen ocupa un tercio de la pantalla */
+    height: auto;
+    object-fit: cover; /* Mantener el aspecto de la imagen */
+    margin-bottom: 10px;
+}
+
     text-decoration: none; /* Quitar subrayado */
 }
 
