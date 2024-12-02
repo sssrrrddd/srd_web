@@ -18,6 +18,7 @@
 
         <!-- Project Content -->
         <h1 id="title" class="title">Loading...</h1>
+        <h2 id="subtitle" class="subtitle">Loading subtitle...</h2>
         <p id="description" class="description">Loading description...</p>
 
         <!-- Project Images -->
@@ -50,6 +51,7 @@
 
                     // Actualiza el HTML con los datos del proyecto
                     document.getElementById('title').textContent = project.title; // Título del proyecto
+                    document.getElementById("subtitle").textContent = project.subtitle || "";
                     document.getElementById('description').textContent = project.description; // Descripción del proyecto
 
                     // Muestra las imágenes del proyecto
