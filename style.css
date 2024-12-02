@@ -122,3 +122,80 @@ bi {
     vertical-align: -0.125em;
     fill: currentColor;
 }
+/* Estilo para el enlace de volver a la página principal */
+.back-to-archive {
+    position: relative;
+    margin: 20px 0 0 30px; /* Ajusta los márgenes para moverlo más abajo y a la derecha */
+}
+
+.back-link {
+    font-family: "Spectral", serif;
+    font-style: italic;
+    color: #0800ff;
+    text-decoration: none; /* Quita el subrayado del enlace */
+}
+
+.back-link:hover {
+    text-decoration: underline; /* Agrega subrayado al pasar el mouse */
+}
+
+
+
+.images-container {
+    display: flex;
+    flex-direction: column; /* Alinea las imágenes una debajo de la otra */
+    gap: 20px;
+    margin: 20px;
+}
+
+.image-item {
+    text-align: center;
+}
+
+.image-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-item p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+.subtitle {
+    font-family: "Spectral", serif;
+    font-style: italic;
+    color: #555;
+    font-size: 15px;
+    margin: 0 50px 20px;
+    text-align: left;
+}
+
+.title {
+    font-family: "Spectral", serif;
+    font-style: italic;
+    color: #0800ff;
+    font-size: 48px; /* Aumenta el tamaño del título */
+    margin: 20px 0 0 50px; /* Mueve el título hacia la derecha */
+    text-align: left;
+}
+/* Contenedor para título y descripción */
+.title-description-container {
+    display: flex;
+    align-items: flex-start; /* Alinea al principio de la fila */
+    justify-content: space-between;
+    margin: 20px 50px; /* Margen general del contenedor */
+}
+/* Estilo para la descripción */
+.description {
+    font-family: "Helvetica", sans-serif;
+    font-size: 15px; /* Tamaño del texto de la descripción */
+    color: black;
+    text-align: justify;
+    margin: -70px 0 0 600px; /* Más arriba (-10px) y más a la derecha (600px) */
+    max-width: 50%; /* Ajusta el ancho máximo de la descripción */
+}
+
