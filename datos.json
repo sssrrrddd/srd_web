@@ -5,7 +5,6 @@
         "subtitle": "Diseño Especulativo - 2024",
         "description": "Diseño de escenario especulativo donde se rediseña el acceso a los servicios pensando en la bicicleta como medio de transporte principal",
         "images": ["/imgs/wheel-1.jpg", "/imgs/wheel-2.jpg", "/imgs/wheel-3.jpg"],
-        "imageDescriptions": ["Vista lateral del diseño", "Detalle del sistema de soporte", "Uso del producto en un entorno urbano"]
     },
     {
         "id": "2",
@@ -13,7 +12,6 @@
         "subtitle": "Diseño Industrial - 2023",
         "description": "Mobiliario urbano diseñado como espacio de descanso en recorrido de bicicleta. Se diseñó a partir del análisis del estilo de Pierre Chareau.",
         "images": ["bike-1.jpg", "bike-2.jpg", "bike-3.jpg"],
-        "imageDescriptions": ["Vista frontal del mobiliario", "Detalle de los materiales", "Configuración en espacio público"]
     },
     {
         "id": "3",
@@ -21,15 +19,13 @@
         "subtitle": "Diseño de Espacios - 2023",
         "description": "Espacio de estar destinado para integrantes del centro comunitario Yunus Peñalolén. La idea era optimizar un espacio bastante reducido y transformarlo en un lugar de encuentro y descanso. Se realizó una serie de mobiliario diseñado para espacio de estar en Yunus Peñalolén. Se pretendió optimizar costos, siendo mayoritariamente de madera y metal.",
         "images": ["yunus-1.jpg", "yunus-2.jpg", "yunus-3.jpg"],
-        "imageDescriptions": ["Prototipo del mobiliario", "Uso del mobiliario en el espacio", "Detalle de materiales económicos"]
     },
     {
         "id": "4",
         "title": "Stgo Intermodal",
         "subtitle": "Diseño Editorial - 2024",
         "description": "Diseño editorial de informe de diseño especulativo.",
-        "images": ["stgo-q.jpg", "stgo-2.jpg", "stgo-3.jpg"],
-        "imageDescriptions": ["Portada del informe", "Vista de contenido interno", "Diseño gráfico aplicado"]
+        "images": ["stgo-1.jpg", "stgo-2.jpg", "stgo-3.jpg"],
     },
     {
         "id": "5",
@@ -37,6 +33,5 @@
         "subtitle": "Diseño de Servicios - 2024",
         "description": "Proyecto con enfoque comunitario.",
         "images": ["equita-1.jpg", "equita-2.jpg", "equita-3.jpg"],
-        "imageDescriptions": ["Detalle de la intervención", "Participación comunitaria", "Vista general del resultado"]
     }
 ]
