@@ -5,9 +5,11 @@
         "subtitle": "Diseño Especulativo - 2024",
         "description": "Diseño de escenario especulativo donde se rediseña el acceso a los servicios pensando en la bicicleta como medio de transporte principal. WHEEL&DEAL es una sistema de estaciones intermodales que ofrecen servicios accesibles por medio de la bicicleta, promoviendo así su uso e integración dentro de la movilidad urbana de Santiago",
         "images": [
-        "https://raw.githubusercontent.com/sssrrrddd/srd_web/main/imgs/wheel-1.jpg",
-        "https://raw.githubusercontent.com/sssrrrddd/srd_web/main/imgs/wheel-2.jpg",
-        "https://raw.githubusercontent.com/sssrrrddd/srd_web/main/imgs/wheel-3.jpg"]
+        "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/WHEEL%26DEAL/wheel%26deal_Mesa%20de%20trabajo%201.jpg",
+        "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/WHEEL%26DEAL/wheel%26deal-03(2).jpg",
+        "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/WHEEL%26DEAL/wheel%26deal-04(1).jpg",
+        "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/WHEEL%26DEAL/wheel%26deal-02(1).jpg",
+        "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/WHEEL%26DEAL/wheel%26deal(2).jpg"]
     },
     {
         "id": "2",
