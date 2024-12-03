@@ -4,7 +4,7 @@
         "title": "Wheel & Deal",
         "subtitle": "Diseño Especulativo - 2024",
         "description": "Diseño de escenario especulativo donde se rediseña el acceso a los servicios pensando en la bicicleta como medio de transporte principal",
-        "images": ["WHEELUNO.jpg", "/imgs/wheel-2.jpg", "/imgs/wheel-3.jpg"],
+        "images": ["/imgs/wheel-1.jpg", "/imgs/wheel-2.jpg", "/imgs/wheel-3.jpg"],
         "imageDescriptions": ["Vista lateral del diseño", "Detalle del sistema de soporte", "Uso del producto en un entorno urbano"]
     },
     {
