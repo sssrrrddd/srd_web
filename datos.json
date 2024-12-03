@@ -7,35 +7,34 @@
         "images": [
         "https://raw.githubusercontent.com/sssrrrddd/srd_web/main/imgs/wheel-1.jpg",
         "https://raw.githubusercontent.com/sssrrrddd/srd_web/main/imgs/wheel-2.jpg",
-        "https://raw.githubusercontent.com/sssrrrddd/srd_web/main/imgs/wheel-3.jpg"],
-
+        "https://raw.githubusercontent.com/sssrrrddd/srd_web/main/imgs/wheel-3.jpg"]
     },
     {
         "id": "2",
         "title": "Bike Stop",
         "subtitle": "Diseño Industrial - 2023",
         "description": "Mobiliario urbano diseñado como espacio de descanso en recorrido de bicicleta. Se diseñó a partir del análisis del estilo de Pierre Chareau.",
-        "images": ["bike-1.jpg", "bike-2.jpg", "bike-3.jpg"],
+        "images": ["bike-1.jpg", "bike-2.jpg", "bike-3.jpg"]
     },
     {
         "id": "3",
         "title": "Yunus",
         "subtitle": "Diseño de Espacios - 2023",
         "description": "Espacio de estar destinado para integrantes del centro comunitario Yunus Peñalolén. La idea era optimizar un espacio bastante reducido y transformarlo en un lugar de encuentro y descanso. Se realizó una serie de mobiliario diseñado para espacio de estar en Yunus Peñalolén. Se pretendió optimizar costos, siendo mayoritariamente de madera y metal.",
-        "images": ["yunus-1.jpg", "yunus-2.jpg", "yunus-3.jpg"],
+        "images": ["yunus-1.jpg", "yunus-2.jpg", "yunus-3.jpg"]
     },
     {
         "id": "4",
         "title": "Stgo Intermodal",
         "subtitle": "Diseño Editorial - 2024",
         "description": "Diseño editorial de informe de diseño especulativo.",
-        "images": ["stgo-1.jpg", "stgo-2.jpg", "stgo-3.jpg"],
+        "images": ["stgo-1.jpg", "stgo-2.jpg", "stgo-3.jpg"]
     },
     {
         "id": "5",
         "title": "Equita",
         "subtitle": "Diseño de Servicios - 2024",
         "description": "Proyecto con enfoque comunitario.",
-        "images": ["equita-1.jpg", "equita-2.jpg", "equita-3.jpg"],
+        "images": ["equita-1.jpg", "equita-2.jpg", "equita-3.jpg"]
     }
 ]
