@@ -18,7 +18,7 @@ main.container {
 
 /* HEADER */
 .tituloheader {
-    font-family: "Spectral", serif;
+    font-family: "Spectral", serif ;
     font-style: italic;
     margin-left: 30px;
 }
@@ -34,15 +34,15 @@ body.loaded .cuerpo {
 
 /* Header fijo */
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw; /* Asegura que abarque todo el ancho de la ventana */
-    z-index: 10;
-    background-color: white;
-    padding: 0 15px; /* Espaciado interno */
-    box-sizing: border-box; /* Incluye padding en el ancho total */
-    transition: background-color 0.5s ease, box-shadow 0.3s ease;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important; /* Asegura que abarque todo el ancho de la ventana */
+    z-index: 10 !important;
+    background-color: white !important;
+    padding: 0 15px !important; /* Espaciado interno */
+    box-sizing: border-box !important; /* Incluye padding en el ancho total */
+    transition: background-color 0.5s ease, box-shadow 0.3s ease !important;
 }
 
 /* Línea gris al scrollear */
