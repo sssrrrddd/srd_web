@@ -14,9 +14,6 @@ html, body {
     position: relative;
 }
 
-body.loaded .scrolling-text {
-       visibility: visible; /* Hace visible el contenido al cargarse */
-}
 
 main.container {
     background: transparent; /* Elimina fondo blanco */
@@ -32,9 +29,8 @@ main.container {
     margin-left: 30px;
 }
 
-body.loaded .cuerpo {
-    opacity: 1;
-    transform: translateY(0);
+body.loaded {
+    visibility: visible; /* Hace visible el contenido al cargarse */
 }
 
 /* Header fijo */
