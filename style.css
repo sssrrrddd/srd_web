@@ -5,10 +5,15 @@ body {
     position: relative;
     opacity: 0;
     transition: opacity 1s ease-in-out;
+    overflow-x: hidden;
 }
 
 body.loaded .scrolling-text {
     opacity: 1;
+}
+
+main.container {
+    margin-top: 70px; /* ajusta según la altura del header */
 }
 
 /* HEADER */
@@ -220,6 +225,7 @@ img#bouncingImage {
     font-family: "Helvetica", serif;
     color: grey;
     font-size: 15px;
+    font-weight: lighter;
     margin: 0 55px 20px;
     text-align: left;
 }
