@@ -8,7 +8,247 @@ body {
     overflow-x: hidden;
 }
 
+body.loaded .scrolling-text {body {
+    margin: 0;
+    overflow: auto; /* Permite scroll automático si el contenido lo requiere */
+    height: auto; /* Deja que el contenido determine la altura */
+    position: relative;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Solo oculta el scroll lateral */
+    overflow-y: auto; /* Permite desplazamiento vertical */
+    position: relative;
+}
+
 body.loaded .scrolling-text {
+    opacity: 1;
+}
+
+main.container {
+    background: transparent; /* Elimina fondo blanco */
+    overflow: visible; /* Permite que la imagen salga del contenedor */
+    position: relative;
+    margin-top: 70px;
+}
+
+/* HEADER */
+.tituloheader {
+    font-family: "Spectral", serif;
+    font-style: italic;
+    margin-left: 30px;
+}
+
+body.loaded .cuerpo {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Header fijo */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Asegura que abarque todo el ancho de la ventana */
+    z-index: 10;
+    background-color: white;
+    padding: 0 15px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluye padding en el ancho total */
+    transition: background-color 0.5s ease, box-shadow 0.3s ease;
+}
+
+/* Línea gris al scrollear */
+header.scrolled {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Opcional: Evitar contenido pegado a los bordes del viewport */
+.container {
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* SUBRAYADO */
+.brand-name {
+    font-family: "Spectral", serif;
+    font-style: italic;
+}
+
+/* Navegación */
+.nav-link {
+    font-weight: bold;
+    font-family: "Helvetica", sans;
+    color: black !important; /* Forzar el color negro */
+    text-decoration: none; /* Quitar subrayado */
+}
+
+.nav-link:hover {
+    color: gray !important; /* Forzar el color gris en hover */
+}
+
+.nav-link.active {
+    color: gray !important;
+}
+
+/* INDEX */
+/* Contenido principal */
+.cuerpo {
+    font-weight: light;
+    font-family: "Helvetica", sans;
+    color: darkgray; /* Forzar el color negro */
+    text-decoration: none; /* saca subrayado */
+    padding: 10px;
+    margin: 0 auto; 
+    max-width: 300px; 
+    line-height: 1.5;
+}
+
+/* CONTENIDO ABOUT */
+.bienvenido {
+    margin: 30;
+    margin-top: 67px;
+    padding-right: 20px;
+    flex-basis: 150px;
+    flex-shrink: 0;
+}
+.cuerpo2 {
+    font-weight: light;
+    font-family: "Helvetica", sans;
+    color: black;
+    text-decoration: none; /* Quitar subrayado */
+    padding: 10px;
+    margin-top: 60px;
+}
+img#bouncingImage {
+    width: 300px; /* Tamaño de la imagen */
+    height: 300px;
+    position: absolute; /* Permite movimiento libre */
+    animation: rotate 5s linear infinite; /* Rotación infinita */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Animación de movimiento de imagen */
+@keyframes move-image {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+/* ANIMACIÓN TEXTO DESPLAZABLE */
+.scrolling-text {
+    width: 100%;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: scrolling-text 20s linear infinite;
+    font-family: "Spectral", serif;
+    font-style: italic;
+    color: #0800ff;
+    margin-top: 80px; /* ajusta la distancia desde el encabezado */
+    opacity: 0;
+}
+
+@keyframes scrolling-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* cartas para que cambien de imagenes*/
+.card {
+    border: none; /* sacar bordes */
+}
+
+.card img {
+    border-radius: 10; /* Sin bordes redondeados */
+    
+}
+
+.card .hover-image {
+    display: none;
+}
+
+.card:hover .default-image {
+    display: none;
+}
+
+.card:hover .hover-image {
+    display: block;
+}
+
+.card .card-body {
+    text-align: center; /* Centrar texto */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); /* Sombra suave */
+}
+
+/* STYLE PARA SINGLE */
+
+.back-link {
+    font-family: "Spectral", serif;
+    font-style: italic;
+    color: #0800ff;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    margin: 10px 0 0 -20px; /* Ajusta los márgenes para moverlo más abajo y a la derecha  */
+}
+
+.back-link:hover {
+    text-decoration: underline; /* Agrega subrayado al pasar el mouse */
+}
+
+.title {
+    font-family: "Spectral", serif;
+    font-style: italic;
+    color: #0800ff;
+    font-size: 48px; /* Aumenta el tamaño del título */
+    margin: 150px -40px 0 50px; /* Mueve el título hacia la derecha */
+    text-align: left;
+}
+
+.images img {
+    display: block; /* cada imagen ocupa una línea completa */
+    margin: 60px auto; /* centra cada imagen horizontalmente y agrega un espacio vertical */
+    width: 90%; /* ancho del contenedor */
+    height: auto; /* mantiene las proporciones */
+    object-fit: cover; /* Ajusta la imagen para que se vea bien dentro de los límites */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); /* Sombra suave */
+    border-radius: 5px; /* Bordes redondeados para suavizar el diseño */
+}
+
+.subtitle {
+    font-family: "Helvetica", serif;
+    color: grey;
+    font-size: 15px;
+    font-weight: lighter;
+    margin: 0 50px 20px;
+    text-align: left;
+}
+
+/* Estilo para la descripción */
+.description {
+    font-family: "Helvetica", sans-serif;
+    font-weight: lighter;
+    font-size: 15px; /* Tamaño del texto de la descripción */
+    color: black;
+    text-align: justify;
+    margin: -80px 0 0 600px; 
+    max-width: 50%; /* Ajusta el ancho máximo de la descripción */
+}
+
     opacity: 1;
 }
 
