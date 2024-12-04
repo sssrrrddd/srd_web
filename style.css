@@ -224,3 +224,11 @@ img#bouncingImage {
     margin: -80px 0 0 600px; 
     max-width: 50%; /* Ajusta el ancho máximo de la descripción */
 }
+.cuerpo2 {
+    font-weight: light;
+    font-family: "Helvetica", sans;
+    color: black;
+    text-decoration: none; /* Quitar subrayado */
+    padding: 10px;
+    margin-top: 60px;
+}
