@@ -144,7 +144,7 @@ img#bouncingImage {
     font-family: "Spectral", serif;
     font-style: italic;
     color: #0800ff;
-    margin-top: 62px; /* Ajustar la distancia desde el encabezado */
+    margin-top: 70px; /* Ajustar la distancia desde el encabezado */
     opacity: 0;
 }
 
