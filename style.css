@@ -3,8 +3,55 @@ body {
     overflow: auto; /* Permite scroll automático si el contenido lo requiere */
     height: auto; /* Deja que el contenido determine la altura */
     position: relative;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
+body.loaded .scrolling-text {
+    opacity: 1;
+}
+
+/* HEADER */
+.tituloheader {
+    font-family: "Spectral", serif;
+    font-style: italic;
+    margin-left: 30px;
+}
+.cuerpo {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 3s ease-out, transform 3s ease-out;
+}
+body.loaded .cuerpo {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Header fijo */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Asegura que abarque todo el ancho de la ventana */
+    z-index: 10;
+    background-color: white;
+    padding: 0 15px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluye padding en el ancho total */
+    transition: background-color 0.5s ease, box-shadow 0.3s ease;
+}
+
+/* Línea gris al scrollear */
+header.scrolled {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Opcional: Evitar contenido pegado a los bordes del viewport */
+.container {
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* SUBRAYADO */
 .brand-name {
     font-family: "Spectral", serif;
     font-style: italic;
@@ -32,67 +79,32 @@ a:active {
     text-decoration: none !important;
 }
 
+/* INDEX */
 /* Contenido principal */
 .cuerpo {
     font-weight: light;
     font-family: "Helvetica", sans;
-    color: black !important; /* Forzar el color negro */
+    color: grey; /* Forzar el color negro */
     text-decoration: none; /* Quitar subrayado */
     padding: 10px;
 }
 
-/* Animación del texto desplazable */
-.scrolling-text {
-    width: 100%;
-    white-space: nowrap;
-    box-sizing: border-box;
-    animation: scrolling-text 20s linear infinite;
-    font-family: "Spectral", serif;
-    font-style: italic;
-    color: #0800ff;
-    margin-top: -20px; /* Ajustar la distancia desde el encabezado */
+/* CONTENIDO ABOUT */
+.bienvenido {
+    margin: 30;
+    margin-top: 65px;
+    padding-right: 20px;
+    flex-basis: 150px;
+    flex-shrink: 0;
 }
-
-@keyframes scrolling-text {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
+.cuerpo2 {
+    font-weight: light;
+    font-family: "Helvetica", sans;
+    color: black;
+    text-decoration: none; /* Quitar subrayado */
+    padding: 10px;
+    margin-top: 60px;
 }
-
-/* Cartas */
-.card {
-    border: none; /* Eliminar bordes */
-}
-
-.card img {
-    border-radius: 0; /* Sin bordes redondeados */
-    transition: opacity 0.5s ease-in-out; /* Transición suave */
-}
-
-.card .hover-image {
-    display: none;
-}
-
-.card:hover .default-image {
-    display: none;
-}
-
-.card:hover .hover-image {
-    display: block;
-}
-
-.card .card-body {
-    text-align: center; /* Centrar texto */
-    transition: transform 0.3s ease-in-out; /* Animación para texto */
-}
-
-.card:hover .card-body {
-    transform: translateY(-10px); /* Levantamiento al hacer hover */
-}
-
 img#bouncingImage {
     width: 300px; /* Tamaño de la imagen */
     height: 300px;
@@ -118,43 +130,71 @@ img#bouncingImage {
         transform: translateX(100%);
     }
 }
-bi {
-    vertical-align: -0.125em;
-    fill: currentColor;
+/* ANIMACIÓN TEXTO DESPLAZABLE */
+.scrolling-text {
+    width: 100%;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: scrolling-text 20s linear infinite;
+    font-family: "Spectral", serif;
+    font-style: italic;
+    color: #0800ff;
+    margin-top: 62px; /* Ajustar la distancia desde el encabezado */
+    opacity: 0;
 }
-/* Estilo para el enlace de volver a la página principal */
-.back-to-archive {
-    position: relative;
-    margin: 20px 0 0 30px; /* Ajusta los márgenes para moverlo más abajo y a la derecha */
+
+@keyframes scrolling-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
+
+/* Cartas para que cambien de imagenes*/
+.card {
+    border: none; /* Eliminar bordes */
+}
+
+.card img {
+    border-radius: 0; /* Sin bordes redondeados */
+    transition: opacity 0.5s ease-in-out; /* Transición suave */
+}
+
+.card .hover-image {
+    display: none;
+}
+
+.card:hover .default-image {
+    display: none;
+}
+
+.card:hover .hover-image {
+    display: block;
+}
+
+.card .card-body {
+    text-align: center; /* Centrar texto */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); /* Sombra suave */
+}
+
+.card:hover .card-body {
+    transform: translateY(-10px); /* Levantamiento al hacer hover */
+}
+
+/* STYLE PARA SINGLE */
 
 .back-link {
     font-family: "Spectral", serif;
     font-style: italic;
     color: #0800ff;
     text-decoration: none; /* Quita el subrayado del enlace */
+    margin: 10px 0 0 -20px; /* Ajusta los márgenes para moverlo más abajo y a la derecha  */
 }
 
 .back-link:hover {
     text-decoration: underline; /* Agrega subrayado al pasar el mouse */
-}
-
-.images img {
-    display: block; /* Hace que las imágenes se alineen una debajo de la otra */
-    margin: 20px auto; /* Centra las imágenes y agrega un espacio entre ellas */
-    width: 500px; /* Ancho fijo */
-    height: 700px; /* Alto fijo */
-    object-fit: cover; /* Asegura que la imagen se recorte proporcionalmente para llenar las dimensiones */
-}
-
-
-.subtitle {
-    font-family: "Spectral", serif;
-    font-style: italic;
-    color: #555;
-    font-size: 15px;
-    margin: 0 50px 20px;
-    text-align: left;
 }
 
 .title {
@@ -162,23 +202,34 @@ bi {
     font-style: italic;
     color: #0800ff;
     font-size: 48px; /* Aumenta el tamaño del título */
-    margin: 20px 0 0 50px; /* Mueve el título hacia la derecha */
+    margin: 150px -40px 0 50px; /* Mueve el título hacia la derecha */
     text-align: left;
 }
-/* Contenedor para título y descripción */
-.title-description-container {
-    display: flex;
-    align-items: flex-start; /* Alinea al principio de la fila */
-    justify-content: space-between;
-    margin: 20px 50px; /* Margen general del contenedor */
+
+.images img {
+    display: block; /* Asegura que cada imagen ocupe una línea completa */
+    margin: 60px auto; /* Centra cada imagen horizontalmente y agrega un espacio vertical */
+    width: 90%; /* Las imágenes ocuparán el 80% del ancho del contenedor */
+    height: auto; /* Mantén las proporciones */
+    object-fit: cover; /* Ajusta la imagen para que se vea bien dentro de los límites */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); /* Sombra suave */
+    border-radius: 5px; /* Bordes redondeados para suavizar el diseño */
 }
+
+.subtitle {
+    font-family: "Helvetica", serif;
+    color: grey;
+    font-size: 15px;
+    margin: 0 55px 20px;
+    text-align: left;
+}
+
 /* Estilo para la descripción */
 .description {
     font-family: "Helvetica", sans-serif;
     font-size: 15px; /* Tamaño del texto de la descripción */
     color: black;
     text-align: justify;
-    margin: -70px 0 0 600px; /* Más arriba (-10px) y más a la derecha (600px) */
+    margin: -80px 0 0 600px; /* Más arriba (-10px) y más a la derecha (600px) */
     max-width: 50%; /* Ajusta el ancho máximo de la descripción */
 }
-
