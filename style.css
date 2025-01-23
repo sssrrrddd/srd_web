@@ -101,6 +101,8 @@ header.scrolled {
     padding-right: 20px;
     flex-basis: 150px;
     flex-shrink: 0;
+    font-size: 30px;
+    
 }
 
 img#bouncingImage {
