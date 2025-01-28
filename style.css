@@ -7,7 +7,8 @@ body {
     transition: opacity 1s ease-in-out; /* Suaviza la transición */
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     overflow: auto; /* Permite scroll en ambas direcciones si es necesario */
@@ -89,8 +90,8 @@ header.scrolled {
     color: darkgray; /* Forzar el color negro */
     text-decoration: none; /* saca subrayado */
     padding: 10px;
-    margin: 0 auto; 
-    max-width: 300px; 
+    margin: 0 auto;
+    max-width: 300px;
     line-height: 1.5;
 }
 
@@ -102,7 +103,6 @@ header.scrolled {
     flex-basis: 150px;
     flex-shrink: 0;
     font-size: 30px;
-    
 }
 
 img#bouncingImage {
@@ -223,7 +223,7 @@ img#bouncingImage {
     font-size: 15px; /* Tamaño del texto de la descripción */
     color: black;
     text-align: justify;
-    margin: -80px 0 0 600px; 
+    margin: -80px 0 0 600px;
     max-width: 50%; /* Ajusta el ancho máximo de la descripción */
 }
 .cuerpo2 {
@@ -253,4 +253,3 @@ img#bouncingImage {
     font-size: 16px; /* Tamaño del texto */
     color: gray; /* Color gris para los nombres */
 }
-
