@@ -243,13 +243,15 @@ img#bouncingImage {
     font-family: "Spectral", serif; /* Aplica la fuente Spectral */
     font-size: 20px; /* Ajusta el tamaño de la fuente */
     font-weight: bold; /* Aplica negrita */
-    color: black; /* Cambia el color a negro */
+    color: #0800ff;
     margin-bottom: 10px; /* Espacio entre el título y el contenido */
 }
 
 #team p {
     margin: 0; /* Elimina márgenes verticales */
     font-family: "Helvetica", sans-serif; /* Fuente para los nombres */
-    font-size: 16px; /* Tamaño del texto */
+    font-size: 15px; /* Tamaño del texto */
     color: gray; /* Color gris para los nombres */
+    font-weight: lighter;
+    color: black;
 }
