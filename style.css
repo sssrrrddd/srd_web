@@ -3,8 +3,7 @@ body {
     overflow: auto; /* Permite scroll automático */
     height: auto;
     position: relative;
-    opacity: 1; /* Visible desde el inicio */
-    transition: opacity 1s ease-in-out; /* Suaviza la transición */
+
 }
 
 html,
@@ -102,7 +101,7 @@ header.scrolled {
     padding-right: 20px;
     flex-basis: 150px;
     flex-shrink: 0;
-    font-size: 30px;
+    font-size: 22px;
 }
 
 img#bouncingImage {
@@ -181,7 +180,8 @@ img#bouncingImage {
     font-style: italic;
     color: #0800ff;
     text-decoration: none; /* Quita el subrayado del enlace */
-    margin: 10px 0 0 -20px; /* Ajusta los márgenes para moverlo más abajo y a la derecha  */
+    margin: 10px 0 0 -30px; /* Ajusta los márgenes para moverlo más abajo y a la derecha  */
+
 }
 
 .back-link:hover {
@@ -192,7 +192,7 @@ img#bouncingImage {
     font-family: "Spectral", serif;
     font-style: italic;
     color: #0800ff;
-    font-size: 48px; /* Aumenta el tamaño del título */
+    font-size: 52px; /* Aumenta el tamaño del título */
     margin: 150px -40px 0 50px; /* Mueve el título hacia la derecha */
     text-align: left;
 }
@@ -242,9 +242,9 @@ img#bouncingImage {
 
 .team-title {
     font-family: "Helvetica", sans-serif;
-    font-size: 20px; /* Ajusta el tamaño de la fuente */
+    font-size: 18px; /* Ajusta el tamaño de la fuente */
     font-weight: bold; /* Aplica negrita */
-    color: grey;
+    color: black;
     margin-bottom: 10px; /* Espacio entre el título y el contenido */
 }
 
@@ -256,3 +256,13 @@ img#bouncingImage {
     font-weight: lighter;
     color: black;
 }
+
+.year-title {
+    font-family: "Helvetica", sans-serif;
+    font-size: 18px; /* Ajusta el tamaño de la fuente */
+    font-weight: bold; /* Aplica negrita */
+    color: black;
+    margin-top: -53px;
+
+}
+
