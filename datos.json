@@ -9,7 +9,9 @@
         "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/WHEEL%26DEAL/wheel%26deal-03(2).jpg",
         "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/WHEEL%26DEAL/wheel%26deal-04(1).jpg",
         "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/WHEEL%26DEAL/wheel%26deal-02(1).jpg",
-        "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/WHEEL%26DEAL/wheel%26deal(2).jpg"]
+        "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/WHEEL%26DEAL/wheel%26deal(2).jpg"],
+        "team": "Equipo Alpha",
+        "year": "2023"
     },
     {
         "id": "2",
@@ -19,7 +21,9 @@
         "images": [
         "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/BIKESTOP/bikestop-11(1).jpg",
         "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/BIKESTOP/bikestop-12(1).jpg",
-        "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/BIKESTOP/bikestopp.jpg"]
+        "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/BIKESTOP/bikestopp.jpg"],
+        "team": "Equipo Alpha",
+        "year": "2023"
     },
     {
         "id": "3",
@@ -30,7 +34,9 @@
         "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/YUNUS/yunus-07(1).jpg",
         "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/YUNUS/yunus-09(1).jpg",
         "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/YUNUS/yunus-08.jpg",
-        "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/YUNUS/yunus-10.jpg"]
+        "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/YUNUS/yunus-10.jpg"],
+        "team": "Equipo Alpha",
+        "year": "2023"
     },
     {
         "id": "4",
@@ -40,13 +46,17 @@
         "images": [
         "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/STGO/stgointermodal-07(1).jpg",
         "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/STGO/stgointermodal-08(1).jpg",
-        "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/STGO/stgointermodal-06.jpg"]
+        "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/STGO/stgointermodal-06.jpg"],
+        "team": "Equipo Alpha",
+        "year": "2023"
     },
     {
         "id": "5",
         "title": "Equita",
         "subtitle": "Diseño de Servicios - 2024",
         "description": "Equita es una plataforma digital integral diseñada para reducir la violencia gineco-obstétrica y mejorar la salud reproductiva y ginecológica en Chile. Nos enfocamos en utilizar el tiempo de consulta de manera eficiente para abordar las ineficiencias del sistema de salud, cerrar brechas y fomentar un entorno de apoyo, respetuoso y eficiente. El proyecto fue parte de un concurso internacional: Service Design Challenge. Este desafío duro alrededor de 3 meses, donde junto a mi equipo estudiamos la violencia ginecológica en Chile y como erradicarla desde el diseño de servicios. El resultado nos llevó al 2ndo lugar en el concurso internacional, junto con una mención Honrosa.",
-        "images": ["https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/EQUITA/equita-09(1).jpg", "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/EQUITA/equita-11(1).jpg", "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/EQUITA/equita-10.jpg"]
+        "images": ["https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/EQUITA/equita-09(1).jpg", "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/EQUITA/equita-11(1).jpg", "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/EQUITA/equita-10.jpg"],
+        "team": "Equipo Alpha",
+        "year": "2023"
     }
 ]
