@@ -106,7 +106,20 @@
                 });
 
                 // Agregar equipo y año si existen en el JSON
-                document.getElementById('team').textContent = project.team || 'N/A';
+                
+const teamContainer = document.getElementById('team');
+if (project.team && Array.isArray(project.team)) {
+    const ul = document.createElement('ul');
+    project.team.forEach(member => {
+        const li = document.createElement('li');
+        li.textContent = member;
+        ul.appendChild(li);
+    });
+    teamContainer.appendChild(ul);
+} else {
+    teamContainer.textContent = project.team || 'N/A';
+}
+
                 document.getElementById('year').textContent = project.year || 'N/A';
             })
             .catch(error => {
