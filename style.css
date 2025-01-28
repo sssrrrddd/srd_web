@@ -233,6 +233,7 @@ img#bouncingImage {
     text-decoration: none; /* Quitar subrayado */
     padding: 10px;
     margin-top: 60px;
+    font-weight: lighter;
 }
 /* Estilo para la sección de equipo */
 .team-section {
