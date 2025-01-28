@@ -251,7 +251,7 @@ img#bouncingImage {
     margin: 0; /* Elimina márgenes verticales */
     font-family: "Helvetica", sans-serif; /* Fuente para los nombres */
     font-size: 15px; /* Tamaño del texto */
-    color: gray; /* Color gris para los nombres */
+    color: black; /* Color gris para los nombres */
     font-weight: lighter;
     color: black;
 }
