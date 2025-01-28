@@ -10,8 +10,8 @@
         "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/WHEEL%26DEAL/wheel%26deal-04(1).jpg",
         "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/WHEEL%26DEAL/wheel%26deal-02(1).jpg",
         "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/WHEEL%26DEAL/wheel%26deal(2).jpg"],
-        "team": "Equipo Alpha",
-        "year": "2023"
+        "team": "Sofía Rizzoli",
+        "year": "2024"
     },
     {
         "id": "2",
@@ -22,7 +22,7 @@
         "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/BIKESTOP/bikestop-11(1).jpg",
         "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/BIKESTOP/bikestop-12(1).jpg",
         "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/BIKESTOP/bikestopp.jpg"],
-        "team": "Equipo Alpha",
+        "team": "Sofía Rizzoli",
         "year": "2023"
     },
     {
@@ -35,7 +35,12 @@
         "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/YUNUS/yunus-09(1).jpg",
         "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/YUNUS/yunus-08.jpg",
         "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/YUNUS/yunus-10.jpg"],
-        "team": "Equipo Alpha",
+        "team": [
+      "Fernanda Caniullán",
+      "Francisca Montecino",
+      "Martina Santamaría",
+      "Sofía Rizzoli",
+    ],
         "year": "2023"
     },
     {
@@ -48,7 +53,7 @@
         "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/STGO/stgointermodal-08(1).jpg",
         "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/STGO/stgointermodal-06.jpg"],
         "team": "Equipo Alpha",
-        "year": "2023"
+        "year": "2024"
     },
     {
         "id": "5",
@@ -62,8 +67,9 @@
       "Renata Ramos",
       "Francisca Valenzuela",
       "María Victoria Bórquez",
+        "Renata Vergara",
       "Sofía Rizzoli"
     ],
-        "year": "2023"
+        "year": "2024"
     }
 ]
