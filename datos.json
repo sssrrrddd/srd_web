@@ -2,7 +2,7 @@
     {
         "id": "1",
         "title": "Wheel & Deal",
-        "subtitle": "Diseño Especulativo - 2024",
+        "subtitle": "Diseño Especulativo",
         "description": "Diseño de escenario especulativo donde se rediseña el acceso a los servicios pensando en la bicicleta como medio de transporte principal. WHEEL&DEAL es una sistema de estaciones intermodales que ofrecen servicios accesibles por medio de la bicicleta, promoviendo así su uso e integración dentro de la movilidad urbana de Santiago",
         "images": [
             "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/WHEEL%26DEAL/wheel%26deal_Mesa%20de%20trabajo%201.jpg",
@@ -17,7 +17,7 @@
     {
         "id": "2",
         "title": "Bike Stop",
-        "subtitle": "Diseño Industrial - 2023",
+        "subtitle": "Diseño de Producto",
         "description": "Mobiliario urbano diseñado como espacio de descanso en recorrido de bicicleta. Consiste en una isla de madera con luminaria presente en una ruta de bicicleta, tiene como objetivo poder dejar la bicicleta y tomar un descanso. Se diseñó a partir del análisis del estilo de Pierre Chareau.",
         "images": [
             "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/BIKESTOP/bikestop-11(1).jpg",
@@ -30,7 +30,7 @@
     {
         "id": "3",
         "title": "Yunus Peñalolén",
-        "subtitle": "Diseño de Espacios - 2023",
+        "subtitle": "Diseño de Espacio",
         "description": "Espacio de estar destinado para integrantes del centro comunitario Yunus Peñalolén. Se trabajó junto al Centro Comunitario de Yunus de Peñalolén para idear una propuesta que aprovechara un espacio en desuso dentro de la Escuela. La idea era optimizar un espacio bastante reducido y transformarlo en un lugar de encuentro y descanso. Se realizó una serie de mobiliario diseñado en base al estudio del usuario que atiende este centro comunitario, teniendo en cuenta generar un espacio de encuentro optimizando el espacio reducido. Además, se pretendió optimizar costos, siendo el mobiliario mayoritariamente de madera y metal.",
         "images": [
             "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/YUNUS/yunus-07(1).jpg",
@@ -44,20 +44,20 @@
     {
         "id": "4",
         "title": "Stgo Intermodal",
-        "subtitle": "Diseño Editorial - 2024",
+        "subtitle": "Diseño Editorial",
         "description": "Diseño editorial de informe de diseño especulativo. Se realizaron gráficos y visualizaciones a partir del análisis en terreno del transporte público y privado en Santiago de Chile. Estos tenían como objetivo estudiar y comunicar el funcionamiento de la intermodalidad en la capital. ",
         "images": [
             "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/STGO/stgointermodal-07(1).jpg",
             "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/STGO/stgointermodal-08(1).jpg",
             "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/STGO/stgointermodal-06.jpg"
         ],
-        "team": "Equipo Alpha",
+        "team": "Sofía Rizzoli",
         "year": "2024"
     },
     {
         "id": "5",
         "title": "Equita",
-        "subtitle": "Diseño de Servicios - 2024",
+        "subtitle": "Diseño de Servicios",
         "description": "Equita es una plataforma digital integral diseñada para reducir la violencia gineco-obstétrica y mejorar la salud reproductiva y ginecológica en Chile. Nos enfocamos en utilizar el tiempo de consulta de manera eficiente para abordar las ineficiencias del sistema de salud, cerrar brechas y fomentar un entorno de apoyo, respetuoso y eficiente. El proyecto fue parte de un concurso internacional: Service Design Challenge. Este desafío duro alrededor de 3 meses, donde junto a mi equipo estudiamos la violencia ginecológica en Chile y como erradicarla desde el diseño de servicios. El resultado nos llevó al 2ndo lugar en el concurso internacional, junto con una mención Honrosa.",
         "images": [
             "https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/EQUITA/equita-09(1).jpg",
