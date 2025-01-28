@@ -40,7 +40,7 @@
         <div class="row mt-4">
           <div class="col-md-6">
             <h3>Equipo</h3>
-            <p id="team">Loading team...</p>
+            <div id="team">Loading team...</div>
           </div>
           <div class="col-md-6 text-md-end">
             <h3>Año</h3>
@@ -105,20 +105,19 @@
                     imagesContainer.appendChild(imgElement);
                 });
 
-                // Agregar equipo y año si existen en el JSON
-                
-const teamContainer = document.getElementById('team');
-if (project.team && Array.isArray(project.team)) {
-    const ul = document.createElement('ul');
-    project.team.forEach(member => {
-        const li = document.createElement('li');
-        li.textContent = member;
-        ul.appendChild(li);
-    });
-    teamContainer.appendChild(ul);
-} else {
-    teamContainer.textContent = project.team || 'N/A';
-}
+                // Agregar equipo como lista sin viñetas
+                const teamContainer = document.getElementById('team');
+                if (project.team && Array.isArray(project.team)) {
+                    const div = document.createElement('div');
+                    project.team.forEach(member => {
+                        const p = document.createElement('p');
+                        p.textContent = member;
+                        div.appendChild(p);
+                    });
+                    teamContainer.appendChild(div);
+                } else {
+                    teamContainer.textContent = project.team || 'N/A';
+                }
 
                 document.getElementById('year').textContent = project.year || 'N/A';
             })
