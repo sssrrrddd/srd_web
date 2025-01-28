@@ -240,10 +240,10 @@ img#bouncingImage {
 }
 
 .team-title {
-    font-family: "Spectral", serif; /* Aplica la fuente Spectral */
-    font-size: 20px; /* Ajusta el tamaño de la fuente */
+    font-family: "Helvetica", sans-serif;
+    font-size: 22px; /* Ajusta el tamaño de la fuente */
     font-weight: bold; /* Aplica negrita */
-    color: #0800ff;
+    color: black;
     margin-bottom: 10px; /* Espacio entre el título y el contenido */
 }
 
