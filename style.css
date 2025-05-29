@@ -196,7 +196,7 @@ img#bouncingImage {
     font-style: italic;
     color: #6290C8;
     font-size: 52px; /* Aumenta el tamaño del título */
-    margin: 30px -40px 5px 50px; /* Menor margen superior y un poco de espacio abajo */
+    margin: -30px -40px 5px 50px; /* Menor margen superior y un poco de espacio abajo */
     text-align: left;
 }
 
