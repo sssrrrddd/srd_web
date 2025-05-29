@@ -244,10 +244,10 @@ img#bouncingImage {
 }
 
 .team-title {
-    font-family: "Helvetica", sans-serif;
+    font-family: "Alegreya", serif;
     font-size: 18px; /* Ajusta el tamaño de la fuente */
     font-weight: bold; /* Aplica negrita */
-    color: black;
+    color: #6290C8;
     margin-bottom: 10px; /* Espacio entre el título y el contenido */
 }
 
