@@ -140,8 +140,8 @@ img#bouncingImage {
     animation: scrolling-text 20s linear infinite;
     font-family: "Alegreya", serif;
     font-style: italic;
-    color: #0800ff;
-    margin-top: -50px;
+    color: #6290C8;
+    margin-top: -60px;
     visibility: visible; /* <- Corregido */
 }
 
