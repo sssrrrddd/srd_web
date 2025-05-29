@@ -184,7 +184,7 @@ img#bouncingImage {
     font-style: italic;
     color: #6290C8;
     text-decoration: none; /* Quita el subrayado del enlace */
-    margin: 40px 0 0 -30px; /* Aumenta margen superior a 40px */
+    margin: 70px 0 0 -30px; /* Aumenta margen superior a 40px */
 }
 
 .back-link:hover {
