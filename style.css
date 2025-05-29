@@ -192,9 +192,9 @@ img#bouncingImage {
 }
 
 .title {
-    font-family: "Spectral", serif;
+    font-family: "Alegreya", serif;
     font-style: italic;
-    color: #0800ff;
+    color: #6290C8;
     font-size: 52px; /* Aumenta el tamaño del título */
     margin: 150px -40px 0 50px; /* Mueve el título hacia la derecha */
     text-align: left;
