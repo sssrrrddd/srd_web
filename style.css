@@ -134,14 +134,15 @@ img#bouncingImage {
 /* ANIMACIÓN TEXTO DESPLAZABLE */
 .scrolling-text {
     width: 100%;
+    overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
     animation: scrolling-text 20s linear infinite;
     font-family: "Spectral", serif;
     font-style: italic;
     color: #0800ff;
-    margin-top: 80px; /* ajusta la distancia desde el encabezado */
-    visibility: 0;
+    margin-top: 80px;
+    visibility: visible; /* <- Corregido */
 }
 
 @keyframes scrolling-text {
