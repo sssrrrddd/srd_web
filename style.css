@@ -179,9 +179,9 @@ img#bouncingImage {
 /* STYLE PARA SINGLE */
 
 .back-link {
-    font-family: "Spectral", serif;
+    font-family: "Alegreya", serif;
     font-style: italic;
-    color: #0800ff;
+    color: #6290C8;
     text-decoration: none; /* Quita el subrayado del enlace */
     margin: 10px 0 0 -30px; /* Ajusta los márgenes para moverlo más abajo y a la derecha  */
 
