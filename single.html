@@ -28,32 +28,60 @@
             </header>
 
     <!-- Contenido del Proyecto -->
-    <main class="container mt-4">
-        <h1 id="title" class="title">Loading...</h1>
-        <h2 id="subtitle" class="subtitle">Loading subtitle...</h2>
-        <p id="description" class="description">Loading description...</p>
-
-        <!-- Contenedor de imágenes -->
-        <div id="images" class="images row gy-2"></div>
-
-        <!-- Sección Equipo y Año -->
-
-<div class="row mt-4">
-  <div class="col-md-6 team-section">
-    <h3 class="team-title">Equipo</h3>
-    <div id="team">Loading team...</div>
-  </div>
-  <div class="col-md-6 text-md-end">
-    <h3 class="year-title">Año</h3>
-    <p id="year">Loading year...</p>
-  </div>
-</div>
-
-        <!-- enlace para volver a la página principal -->
-        <div class="back-to-archive">
-          <a href="index.html" class="back-link">⬅ Back to Archive</a>
+<main class="container mt-4">
+    <h1 id="title" class="title">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
         </div>
-    </main>
+    </h1>
+
+    <h2 id="subtitle" class="subtitle">
+        <div class="spinner-border spinner-border-sm text-secondary" role="status">
+            <span class="visually-hidden">Loading subtitle...</span>
+        </div>
+    </h2>
+
+    <p id="description" class="description">
+        <div class="spinner-border spinner-border-sm text-dark" role="status">
+            <span class="visually-hidden">Loading description...</span>
+        </div>
+    </p>
+
+    <!-- Contenedor de imágenes -->
+    <div id="images" class="images row gy-2">
+        <div class="text-center w-100">
+            <div class="spinner-border text-secondary" role="status">
+                <span class="visually-hidden">Loading images...</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección Equipo y Año -->
+    <div class="row mt-4">
+        <div class="col-md-6 team-section">
+            <h3 class="team-title">Equipo</h3>
+            <div id="team">
+                <div class="spinner-border spinner-border-sm text-dark" role="status">
+                    <span class="visually-hidden">Loading team...</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-md-end">
+            <h3 class="year-title">Año</h3>
+            <p id="year">
+                <div class="spinner-border spinner-border-sm text-dark" role="status">
+                    <span class="visually-hidden">Loading year...</span>
+                </div>
+            </p>
+        </div>
+    </div>
+
+    <!-- enlace para volver a la página principal -->
+    <div class="back-to-archive">
+        <a href="index.html" class="back-link">⬅ Back to Archive</a>
+    </div>
+</main>
+
 
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
