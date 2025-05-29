@@ -139,9 +139,8 @@ img#bouncingImage {
     font-family: "Spectral", serif;
     font-style: italic;
     color: #0800ff;
-    margin-top: 80px;
-    /* Corrige propiedad inválida */
-    visibility: hidden; /* o usa display: none; u opacity: 0; */
+    margin-top: 80px; /* ajusta la distancia desde el encabezado */
+    visibility: 0;
 }
 
 @keyframes scrolling-text {
