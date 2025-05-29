@@ -30,7 +30,7 @@ main.container {
     font-family: "Alegreya", serif;
     font-style: italic;
     margin-left: 30px;
-    font-size: 40px;
+
 }
 
 body.loaded {
@@ -138,10 +138,10 @@ img#bouncingImage {
     white-space: nowrap;
     box-sizing: border-box;
     animation: scrolling-text 20s linear infinite;
-    font-family: "Spectral", serif;
+    font-family: "Alegreya", serif;
     font-style: italic;
     color: #0800ff;
-    margin-top: -30px;
+    margin-top: -50px;
     visibility: visible; /* <- Corregido */
 }
 
