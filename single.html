@@ -29,57 +29,54 @@
 
     <!-- Contenido del Proyecto -->
 <main class="container mt-4">
-    <h1 id="title" class="title">
-        <div class="spinner-border text-primary" role="status">
-            <span class="visually-hidden">Loading...</span>
-        </div>
-    </h1>
-
-    <h2 id="subtitle" class="subtitle">
-        <div class="spinner-border spinner-border-sm text-secondary" role="status">
-            <span class="visually-hidden">Loading subtitle...</span>
-        </div>
-    </h2>
-
-    <p id="description" class="description">
-        <div class="spinner-border spinner-border-sm text-dark" role="status">
-            <span class="visually-hidden">Loading description...</span>
-        </div>
-    </p>
-
-    <!-- Contenedor de imágenes -->
-    <div id="images" class="images row gy-2">
-        <div class="text-center w-100">
-            <div class="spinner-border text-secondary" role="status">
-                <span class="visually-hidden">Loading images...</span>
-            </div>
-        </div>
+  <h1 id="title" class="title">
+    <div id="title-spinner" class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
     </div>
+  </h1>
 
-    <!-- Sección Equipo y Año -->
-    <div class="row mt-4">
-        <div class="col-md-6 team-section">
-            <h3 class="team-title">Equipo</h3>
-            <div id="team">
-                <div class="spinner-border spinner-border-sm text-dark" role="status">
-                    <span class="visually-hidden">Loading team...</span>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 text-md-end">
-            <h3 class="year-title">Año</h3>
-            <p id="year">
-                <div class="spinner-border spinner-border-sm text-dark" role="status">
-                    <span class="visually-hidden">Loading year...</span>
-                </div>
-            </p>
-        </div>
+  <h2 id="subtitle" class="subtitle">
+    <div id="subtitle-spinner" class="spinner-border spinner-border-sm text-secondary" role="status">
+      <span class="visually-hidden">Loading subtitle...</span>
     </div>
+  </h2>
 
-    <!-- enlace para volver a la página principal -->
-    <div class="back-to-archive">
-        <a href="index.html" class="back-link">⬅ Back to Archive</a>
+  <p id="description" class="description">
+    <div id="description-spinner" class="spinner-border spinner-border-sm text-dark" role="status">
+      <span class="visually-hidden">Loading description...</span>
     </div>
+  </p>
+
+  <div id="images" class="images row gy-2">
+    <div id="images-spinner" class="text-center w-100">
+      <div class="spinner-border text-secondary" role="status">
+        <span class="visually-hidden">Loading images...</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-md-6 team-section">
+      <h3 class="team-title">Equipo</h3>
+      <div id="team">
+        <div id="team-spinner" class="spinner-border spinner-border-sm text-dark" role="status">
+          <span class="visually-hidden">Loading team...</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 text-md-end">
+      <h3 class="year-title">Año</h3>
+      <p id="year">
+        <div id="year-spinner" class="spinner-border spinner-border-sm text-dark" role="status">
+          <span class="visually-hidden">Loading year...</span>
+        </div>
+      </p>
+    </div>
+  </div>
+
+  <div class="back-to-archive">
+    <a href="index.html" class="back-link">⬅ Back to Archive</a>
+  </div>
 </main>
 
 
@@ -111,49 +108,58 @@
             return;
         }
 
-        fetch('https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/datos.json')
-            .then(response => response.json())
-            .then(data => {
-                const project = data.find(item => item.id === projectId);
+fetch('https://raw.githubusercontent.com/sssrrrddd/srd_web/refs/heads/main/datos.json')
+  .then(response => response.json())
+  .then(data => {
+    const project = data.find(item => item.id === projectId);
 
-                if (!project) {
-                    document.getElementById('title').textContent = 'Project not found';
-                    return;
-                }
+    if (!project) {
+      document.getElementById('title').textContent = 'Project not found';
+      return;
+    }
 
-                document.getElementById('title').textContent = project.title;
-                document.getElementById('subtitle').textContent = project.subtitle || "";
-                document.getElementById('description').textContent = project.description;
+    // Reemplazar contenido y remover spinners
+    document.getElementById('title').textContent = project.title;
+    document.getElementById('title-spinner')?.remove();
 
-                const imagesContainer = document.getElementById('images');
-                project.images.forEach(image => {
-                    const imgElement = document.createElement('img');
-                    imgElement.src = image;
-                    imgElement.alt = project.title;
-                    imgElement.classList.add('img-fluid');
-                    imagesContainer.appendChild(imgElement);
-                });
+    document.getElementById('subtitle').textContent = project.subtitle || "";
+    document.getElementById('subtitle-spinner')?.remove();
 
-                // Agregar equipo como lista sin viñetas
-                const teamContainer = document.getElementById('team');
-                if (project.team && Array.isArray(project.team)) {
-                    const div = document.createElement('div');
-                    project.team.forEach(member => {
-                        const p = document.createElement('p');
-                        p.textContent = member;
-                        div.appendChild(p);
-                    });
-                    teamContainer.appendChild(div);
-                } else {
-                    teamContainer.textContent = project.team || 'N/A';
-                }
+    document.getElementById('description').textContent = project.description;
+    document.getElementById('description-spinner')?.remove();
 
-                document.getElementById('year').textContent = project.year || 'N/A';
-            })
-            .catch(error => {
-                console.error('Error loading project:', error);
-                document.getElementById('title').textContent = 'Error loading project';
-            });
+    const imagesContainer = document.getElementById('images');
+    document.getElementById('images-spinner')?.remove();
+    project.images.forEach(image => {
+      const imgElement = document.createElement('img');
+      imgElement.src = image;
+      imgElement.alt = project.title;
+      imgElement.classList.add('img-fluid');
+      imagesContainer.appendChild(imgElement);
+    });
+
+    const teamContainer = document.getElementById('team');
+    document.getElementById('team-spinner')?.remove();
+    if (project.team && Array.isArray(project.team)) {
+      const div = document.createElement('div');
+      project.team.forEach(member => {
+        const p = document.createElement('p');
+        p.textContent = member;
+        div.appendChild(p);
+      });
+      teamContainer.appendChild(div);
+    } else {
+      teamContainer.textContent = project.team || 'N/A';
+    }
+
+    document.getElementById('year').textContent = project.year || 'N/A';
+    document.getElementById('year-spinner')?.remove();
+  })
+  .catch(error => {
+    console.error('Error loading project:', error);
+    document.getElementById('title').textContent = 'Error loading project';
+  });
+
     });
 </script>
 
